@@ -134,12 +134,12 @@ function App() {
           </Route>
 
           <Route exact path="/delivery">
-            <Delivery/>
-          </Route>
-
-          <Route exact path="/delivery-carousel">
             <DeliveryCarousel/>
           </Route>
+
+          {/* <Route exact path="/delivery-carousel">
+            <DeliveryCarousel/>
+          </Route> */}
           {/* STORE LOCATOR ROUTES */}
           {/* KEEP THIS ROUTER AT THE BOTTOM OR ANY PAGE BELOW WILL REDIRECT TO THIS */}
           <Router basename="/locations">

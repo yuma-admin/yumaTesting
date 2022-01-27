@@ -20,7 +20,7 @@ const Navbar=() => {
                         <a href="/colorado-deals" className="mainNavItem">Deals</a>
                         <a href="/locations" className="mainNavItem">Shop</a>
                         <a href="/delivery" className='mainNavItem'>Delivery</a>
-                        <a href='/delivery-carousel' className='mainNavItem'>Carousel</a>
+                        {/* <a href='/delivery-carousel' className='mainNavItem'>Carousel</a> */}
                     </div>
                 </div>
             </div>
