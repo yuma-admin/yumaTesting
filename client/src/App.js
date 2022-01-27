@@ -13,6 +13,9 @@ import Home from './pages/Home/Home'
 import DealsPage from './pages/DealsPage/DealsPage'
 import About from './pages/About/About'
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy'
+import Delivery from './pages/Delivery/delivery';
+import MichiganFaqs from './pages/FaqsPage/MichiganFaqs/MichiganFaqs';
+import ColoradoFaqs from "./pages/FaqsPage/ColoradoFaqs/ColoradoFaqs";
 
 // STORE FINDER PAGE AND COMPONENTS
 import StoreFinder from './pages/storeFinder/StoreFinder'
@@ -26,6 +29,15 @@ import Footer from './components/footer/footer'
 import AgeGateModal from './components/AgeGateModal/AgeGateModal'
 import ageGateLogic from './components/AgeGateModal/ageGateLogic'
 import { createPortal } from "react-dom"
+
+//Testing IheartJane Geolocate API
+import DeepLinkTest from "./pages/DeepLinkingTest/deepLinkGeolocate";
+import DeepLink from "./pages/DeepLinkingTest/deeplinking";
+
+//Testing Carousel Menu
+import DeliveryCarousel from "./pages/Delivery/DeliveryCarousel/deliveryCarousel";
+
+//Testing Deep Linking
 
 function App() {
 
@@ -86,6 +98,17 @@ function App() {
             <Home />
           </Route>
 
+          <Route exact path="/edibles" >
+            <DeepLinkTest />
+          </Route>
+
+
+          <Route exact path="/concentrates">
+            <DeepLink/>
+          </Route> 
+
+
+
           {/* DEALS PAGE ROUTES */}
           <Route path={["/colorado-deals", "/michigan-deals"]}>
             <DealsPage />
@@ -101,6 +124,22 @@ function App() {
             <PrivacyPolicy/>
           </Route>
 
+          {/* FAQS */}
+          <Route exact path="/colorado-faqs">
+            <ColoradoFaqs/>
+          </Route>
+
+          <Route exact path="/michigan-faqs">
+            <MichiganFaqs/>
+          </Route>
+
+          <Route exact path="/delivery">
+            <Delivery/>
+          </Route>
+
+          <Route exact path="/delivery-carousel">
+            <DeliveryCarousel/>
+          </Route>
           {/* STORE LOCATOR ROUTES */}
           {/* KEEP THIS ROUTER AT THE BOTTOM OR ANY PAGE BELOW WILL REDIRECT TO THIS */}
           <Router basename="/locations">

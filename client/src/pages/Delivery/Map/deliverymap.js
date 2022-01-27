@@ -1,0 +1,55 @@
+import React, { useState } from 'react';
+import { GoogleMap, Circle, InfoWindow, withGoogleMap } from 'react-google-maps';
+import MapStyles from '../../storeFinder/map/mapStyles';
+import deliveryjson from './deliveryjson';
+// import '../../storeFinder/map/Mapstyles.css';
+
+
+export default function DeliveryMaps(props) {
+    const zoom = parseInt(props.zoom)
+    const center = props.center
+    const options = {
+        styles: mapStyles,
+        disableDefaultUI: true,
+        zoomControl: true,
+        clickableIcons: true
+    }
+
+
+function DeliveryMap() {
+    const [deliveryStore, setdeliveryStore] = useState(null)
+
+    return (
+        <GoogleMap
+        defaultZoom={zoom}
+        defaultCenter={{lat: center.lat, lng: center.lng}}
+        options={options}
+        >
+        {deliveryjson.map((coordinates) => (
+        <Circle    
+        key={coordinates.id}
+        defaultCenter={{lat: coordinates.lat, lng: coordinates.lng}}
+        radius={coordinates.circle.radius}
+        options={coordinates.circle.options}
+        onClick={() => {
+              setdeliveryStore(coordinates)
+            }}
+        >
+        </Circle>
+        ))}    
+        </GoogleMap>
+    )
+}
+// Wrapper for The Map
+
+const WrappedMap = withGoogleMap(DeliveryMap)
+return (
+    <WrappedMap 
+    googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.REACT_APP_GOOGLE_KEY}`}
+    loadingElement={<div style={{height: props.windowSize}}/>}
+    containerElement={<div style={{height: props.windowSize}}/>}
+    mapElement={<div style={{height: props.windowSize}}/>}
+    className='stickyMap'
+    />  
+)
+}

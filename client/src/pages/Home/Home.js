@@ -1,4 +1,5 @@
 import "./homeStyle.css"
+import DeepLinkTest from "../DeepLinkingTest/deepLinkGeolocate";
 
 function Home() {
 
@@ -21,7 +22,6 @@ function Home() {
                             >
                                 Find Store
                             </a>
-        
                     </div>
                 </div>
                 <div className="col-6" id="imageCol">
@@ -129,12 +129,12 @@ function Home() {
                     <div className="col-sm-4 productSquareColumn">
                         <div className="edibleBox">
                             <img id="edibleImage" className="threeProductCategoryImages" src="/images/homeImages/edible-pattern.png" alt="Cannabis Edibles" />
-                            <a href="/locations/">
+                            <a href="/edibles/">
                                 <div className="overlay">
                                     <img id="edibleImageHover" className="threeProductCategoryImages" src="/images/homeImages/edible-flip.jpg" alt="Marijuana Edibles" />
                                 </div>
                             </a>
-                            <a href="/locations/">
+                            <a href="/edibles/">
                                 <div className="threeProductCategoryHeadline">
                                     Edibles
                                 </div>
@@ -145,12 +145,12 @@ function Home() {
                     <div className="col-sm-4 productSquareColumn">
                         <div className="concentrateBox">
                             <img id="concentrateImage" className="threeProductCategoryImages" src="/images/homeImages/concentrate-pattern.png" alt="Cannabis Concentrates" />
-                                <a href="/locations/">
+                                <a href="/concentrates/">
                                     <div className="overlay">
                                         <img id="concentrateImageHover" className="threeProductCategoryImages" src="/images/homeImages/concentrate-flip.jpg" alt="Marijuana Concentrates" />
                                     </div>
                                 </a>
-                            <a href="/locations/">
+                            <a href="/concentrates/">
                                 <div className="threeProductCategoryHeadline">
                                     Concentrates
                                 </div>

@@ -1,0 +1,120 @@
+.faqsTitle {
+    text-align: center;
+    margin: 2rem 0 4rem 0;
+    color: #d9ab73;
+  }
+
+.faqButtons {
+  /* display: flex; */
+  align-items: center;
+  text-align: center;
+  /* padding: 25px; */
+  /* width: 50%; */
+  box-shadow: rgba(0,0,0,.1) 4px, 4px;
+}
+
+.faqButtons button {
+  flex-grow: 1;
+  cursor: pointer;
+  position: relative;
+  font-size: 30px;
+  padding: calc(1rem/ 1.125) 1rem 1rem;
+  border: .125rem solid #e2b987;
+  color: #d9ab73;
+  background-color: black;
+  font-family: "Crimson Text Pro", serif;
+  /* text-shadow: 2px 2px; */
+  transition: 250ms, cubic-bezier(0.215, 0.61, 0.355, 1);        
+}
+
+.faqButtons button + button {
+  border-right: solid #e2b987;
+  margin-right: calc(.125rem * -1);
+}
+
+.faqButtons button:hover , 
+.faqButtons button:focus {
+  flex-grow: 2;
+  color: black;
+  outline: none;
+  text-shadow: none;
+  background-color: #d9ab73;
+}
+
+.faqButtons button:focus {
+  outline: .125rem dashed #d9ab73;
+  outline-offset: calc(.125rem * -3);
+}
+
+.faqButtons:hover
+button:focus:not(:hover) {
+  flex-grow: 1;
+  color: black;
+  background-color: #d9ab73;
+}
+
+.faqButtons button:active {
+  transform: translateY(.125rem);
+  color: black;
+  background-color: #d9ab73;
+}
+  
+  .accordion-floatLeft{
+    margin-left: auto;
+    margin-right: 50%;
+    padding-top: 50px;
+  } 
+
+  .accordion-floatRight{
+    margin-left: 50%;
+    margin-right: auto;
+  } 
+
+  .accordion {
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: #d9ab73;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+  .accordion-header {
+    color: #d9ab73;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid #926c3e;
+    padding-bottom: 15px;
+  }
+  
+  .accordion-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: #d9ab73;
+    font-family: "Crimson Text Pro", serif;
+    font-weight: bolder;
+  }
+  
+  .accordion-title:hover {
+    background-color: #926c3e;
+  }
+  
+  .accordion-title,
+  .accordion-content {
+    padding: 1rem;
+  }
+  
+  .accordion-content {
+    background-color: #e2b987;
+  }
+  
+  @media screen and (max-width: 700px) {
+    body {
+      font-size: 18px;
+    }
+  
+    .accordion {
+      width: 90%;
+    }
+  }

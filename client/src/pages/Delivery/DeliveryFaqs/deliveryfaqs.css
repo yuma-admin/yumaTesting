@@ -1,0 +1,110 @@
+.dfaqs-border {
+    position: relative;
+    padding: 0 !important;
+    display: flex
+}
+
+.dfaqs-border:before {
+    content: '';
+    position: absolute;
+    border: 1px solid #d9ab73;
+    left: 0;
+    right: 0;
+    transform: scale(0.97,0.94);
+    width: 100%;
+    height: 100%;
+}
+
+.dfaqs-border:after {
+    content: '';
+    position: absolute;
+    border: 1px solid #d9ab73;
+    left: 0;
+    top: 0;
+    right: 0;
+    transform:scale(0.95,0.98);
+    width: 100%;
+    height: 100%;
+}
+
+div.dfaqs-container {
+    display: flex;
+    position: relative;
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+div.dfaqs-container .dfaqs-section {
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    min-height: 40vh;
+    background-color: white;
+}
+
+.dfaqs-header {
+    color:#d9ab73;
+    text-align: center;   
+    font-size: 30px;
+    padding: 50px;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* Accordion Boxes */
+
+.dQuestion {
+    padding: 1rem 1.5rem;
+    border: 2px solid #d9ab73;
+    background-color: #181818;
+    margin-bottom: 1rem;
+    border-radius: .25rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dQuestion h3 {
+    text-transform: none;
+    line-height: 1.5;
+    font-size: 20px;
+    color: gainsboro;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+}
+
+.dQuestion p {
+    color: gainsboro;
+    margin-bottom: 0;
+    margin-top: .5rem;
+    font-family: "Crimson Text Pro", sans-serif;
+}
+
+.dQuestion header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dQuestion header h3 {
+    margin-bottom: 0;
+}
+
+.d-btn {
+    background: transparent;
+    border-color: transparent;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d9ab73;
+    cursor: pointer;
+    margin-left: 1rem;
+    align-self: center;
+    min-width: 2rem;
+}
+
+.dQuest-title {
+    cursor: pointer;
+}

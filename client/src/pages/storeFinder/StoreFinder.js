@@ -174,7 +174,6 @@ function StoreFinder(props) {
                         <Maps center={mapParams.center} zoom={mapParams.zoom} windowSize={'70vh'}></Maps> 
                     </div>
                 </Col>
-                
             </Row>
         </Container>
         )

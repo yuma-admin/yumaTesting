@@ -1,0 +1,119 @@
+.deliveryHeader {
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+}
+
+@media (min-width: 991px) {
+    .search {
+      color: #d9ab73;
+      position: sticky;
+      text-align: center;
+      /* margin-bottom: 5vh; */
+      z-index: 20;
+      top: 0vh;
+      padding-top: 1px;
+      margin-bottom: 5vh;
+  
+      background-color: rgb(24,24,24, 0.9);
+      box-shadow: 0px -12px 30px 20px rgb(24,24,24);
+      
+    }
+  
+    .storeFinderInfo {
+      height: calc(100vh - 70px - 55px);
+      overflow-y:auto;
+      overflow-x:hidden;
+    }
+  
+    .storePageHeight {
+      height: calc(100vh - 70px - 55px);
+      overflow:hidden;
+    }
+  
+  }
+  
+  
+  /* .search {
+    color: #d9ab73;
+    text-align: center;
+    margin-bottom: 5vh;
+  } */
+  
+  
+  
+  @media (max-width: 991px) {
+  
+    /* .storeFinderInfo  {
+      height: calc(100vh - 70px - 55px);
+      overflow-y: scroll;
+    }
+  
+    .stickyMap {
+      position: relative !important;
+    } */
+    .mapCol {
+      /* position: fixed; */
+      right:0;
+    }
+    .search {
+      display: none;
+    }
+    .storeCards {
+      margin-top: 20px;
+      /* z-index: 1000; */
+    }
+    .mobileSearch {
+      display: block !important;
+      z-index: 1;
+    }
+    .desktopMap {
+      display: none;
+    }
+    .mobileMap {
+      display: block !important;
+    }
+  
+    
+  }
+  
+  .mobileMap {
+    display: none;
+  }
+  .mobileSearch {
+    color: #d9ab73;
+    text-align: center;
+    margin-bottom: 5vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: none;
+  }
+  .search h1 {
+    margin-bottom: 1vh;
+  }
+  
+  .mapCol {
+    padding: 0px !important;
+  }
+  
+  .selectedStoreInfo {
+    padding: 0px !important;
+  }
+  
+  .stickyMap {
+    /* position: -webkit-sticky;
+    position: sticky; */
+    top: 0px;
+    padding: 0px !important;
+  }
+  
+  .stickyMap > div > div {
+    height: calc(100vh - 65px);
+    position: relative;
+    overflow: hidden;
+    /* pointer-events: none; */
+  }
+  

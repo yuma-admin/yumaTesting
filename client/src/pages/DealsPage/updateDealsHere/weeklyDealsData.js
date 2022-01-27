@@ -21,10 +21,10 @@ const weeklyDealsData =
             },
             {
                 imgUrl: '/images/deals/coloradoDeals/weekly-update/coupon-6.jpg'
-            },
-            {
-                imgUrl: '/images/deals/coloradoDeals/weekly-update/coupon-7.jpg'
-            },
+            }
+            // {
+            //     imgUrl: '/images/deals/coloradoDeals/weekly-update/coupon-7.jpg'
+            // },
             // {
             //     imgUrl: '/images/deals/coloradoDeals/weekly-update/coupon-8.jpg'
             // }

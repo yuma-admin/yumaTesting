@@ -11,7 +11,7 @@ function Menu(props){
   useEffect(() => {
 
     const script = document.createElement("script");
-
+    
     script.src = `https://api.iheartjane.com/v1/stores/${id}/embed.js`;
     script.async = true;
 

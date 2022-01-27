@@ -15,7 +15,8 @@ const Footer=() => {
 
                 <div className="footerNav">
                     <a href="/about" className="footerNavItem">About Us</a>
-                    <a href="/privacy-policy" className="footerNavItem">Privacy Policy</a> 
+                    <a href="/privacy-policy" className="footerNavItem">Privacy Policy</a>
+                    <a href='/colorado-faqs' className='footerNavItem'>FAQS</a>
                 </div>
             </div>
         </div>
