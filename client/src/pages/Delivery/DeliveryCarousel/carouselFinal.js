@@ -1,10 +1,10 @@
-import CarouselCard1 from "./carouselCard1";
-import CarouselCard2 from "./carouselCard2";
-import CarouselCard3 from "./carouselCard3";
-import CarouselCard4 from "./carouselCard4";
-import CarouselCard5 from "./carouselCard5";
-import CarouselCard6 from "./carouselCard6";
-import CarouselCard7 from "./carouselCard7";
+import CarouselCard1 from "./CarouselCards/carouselCard1";
+import CarouselCard2 from "./CarouselCards/carouselCard2";
+import CarouselCard3 from "./CarouselCards/carouselCard3";
+import CarouselCard4 from "./CarouselCards/carouselCard4";
+import CarouselCard5 from "./CarouselCards/carouselCard5";
+import CarouselCard6 from "./CarouselCards/carouselCard6";
+import CarouselCard7 from "./CarouselCards/carouselCard7";
 import Carousel from './carousel';
 import {v4 as uuidv4} from "uuid"
 

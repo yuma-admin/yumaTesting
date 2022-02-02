@@ -1,6 +1,6 @@
 import React  from 'react';
-import './carouselcard.css';
-import Edibles from './Images/Edibles.png';
+import '../carouselcard.css';
+import Edibles from '../Images/Edibles.png';
 
 function CarouselCard2() {
 

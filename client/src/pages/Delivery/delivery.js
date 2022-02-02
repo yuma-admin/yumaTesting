@@ -50,6 +50,7 @@ function Delivery() {
 
                 <div xs={{span:12,order:1}} sm={{span:12,order:1}} lg={{span:8,order:2}} className='deliveryInfo'>
                     <div className='deliveryFloat'>
+                    <div className='floatContainer'>
                         <h2 className='floatHeader'>
                             DELIVERY
                         </h2>
@@ -59,11 +60,17 @@ function Delivery() {
                         <ol className='floatList'>
                             <li>Create an account</li>
                             <li>Verify your I.D.</li>
-                            <li>Placee your order</li>
+                            <li>Place your order</li>
+                            <ul>
+                                <li>Residential delivery only</li>
+                                <li>Must be 21+ to order</li>
+                                <li>Must be present at time of delivery</li>
+                            </ul>
                             <li>Pay with cash only</li>
                             <li>Enjoy!</li>
                         </ol>
                         <DeliverySearch callBack = {setStoreDistance}></DeliverySearch>
+                        </div>
                     </div>
                     <div className='stickyMap desktopMap'> 
                             <DeliveryMap center={mapParams.center} zoom={mapParams.zoom} windowSize={'calc(100vh  - 70px - 55px)'}></DeliveryMap> 

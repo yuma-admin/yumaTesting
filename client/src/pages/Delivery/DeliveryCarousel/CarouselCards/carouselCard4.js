@@ -1,6 +1,6 @@
 import React  from 'react';
-import './carouselcard.css';
-import Concentrates from './Images/Concentrates.png';
+import '../carouselcard.css';
+import Concentrates from '../Images/Concentrates.png';
 
 function CarouselCard4() {
 
