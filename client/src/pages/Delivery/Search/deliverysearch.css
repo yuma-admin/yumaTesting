@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap");
+.delivery-search-bar-container {
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto 0;
+  z-index: 1;
+}
+
+.delivery-search-input-container {
+    position: relative;
+    border: 1px solid rgb(217,170,117);
+    box-shadow: 0px 0px 10px 3px black;
+ }
+ 
+.delivery-search-input#menuSearch {
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 16%), 0 0 0 1px rgb(0 0 0 / 8%);
+   display: block;
+   width: 100%;
+   padding: 16px 16px 16px 36px;
+   font-size: 16px;
+   font-family: "Montserrat", sans-serif;
+   border-radius: 2px;
+   outline: none;
+   background: #191919;
+   border-color: #d9aa75;
+   color: #f2e6d5;
+  
+  /* box-shadow: 0 2px 2px 0 rgb(0 0 0 / 16%), 0 0 0 1px rgb(0 0 0 / 8%);
+  display: block;
+  width: 100%;
+  padding: 16px 16px 4px 36px;
+  font-size: 16px;
+  border-radius: 2px;
+  outline: none;
+  background: rgb(242, 230, 213, 0.53);
+  color: white; */
+}
+.delivery-search-input#menuSearch::placeholder {
+  color: #f2e6d5;
+  border-bottom-color: rgb(217,170,117);
+}
+.delivery-search-input-container div div {
+  background-color: #191919 !important;
+  color: #f2e6d5 !important;
+  border-bottom-color: rgba(217,170,117,.5) !important;
+  
+}
+.delivery-search-input-container div:not(.icon) {
+  border-bottom: 1px solid rgba(217,170,117,.5);
+
+}
+
+
+::placeholder {
+  color: rgb(242, 230, 213, 0.8);
+  font-family: "Montserrat", sans-serif;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid rgb(242, 230, 213);
+}
+
+button {
+  border-color: #d9ab73;
+  background: #191919;
+  border-radius: 10px;
+  color: rgb(217,170,117);
+  font-family: "Montserrat",sans-serif;
+  margin: auto;
+  font-weight: bolder;
+  font-size: 1.4vw;
+}
+
+.icon {
+  position: absolute;
+  right: 20px;
+  top: 13px;
+  color: white;
+
+}
+
+.geoLocationButton, .icon {
+  position: absolute;
+  top: 13px;
+  color: rgb(217,170,117);
+}
+
+
+.geoLocationButton {
+  position: absolute;
+  left: 10px;
+  top: 13px;
+  width: 20px;
+  background: transparent;
+  border: transparent;
+  color: white;
+  padding: 0px;
+}
+
+@media (max-width: 991px) {
+  .delivery-search-input#menuSearch {
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 16%), 0 0 0 1px rgb(0 0 0 / 8%);
+    display: block;
+    width: 100%;
+    padding: 16px 16px 4px 36px;
+    font-size: 16px;
+    border-radius: 2px;
+    outline: none;
+    background: #171717;
+    color: rgb(217,170,117);
+
+    /* box-shadow: 0 2px 2px 0 rgb(0 0 0 / 16%), 0 0 0 1px rgb(0 0 0 / 8%);
+    display: block;
+    width: 100%;
+    padding: 16px 16px 4px 36px;
+    font-size: 16px;
+    border-radius: 2px;
+    outline: none;
+    background: rgb(23, 23, 23, 1);
+    color: rgb(255, 255, 255); */
+  }
+  ::placeholder {
+    color: rgb(242, 230, 213, 0.8);
+    font-family: "Montserrat", sans-serif;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid rgb(242, 230, 213);
+  }
+
+  .icon {
+    color: rgb(255, 255, 255, 0.7);
+  }
+
+  .geoLocationButton {
+    color: rgb(255, 255, 255, 0.7);
+  }
+
+  .geoLocationButton, .icon {
+    color: rgb(217,170,117);
+ }
+ 
+}

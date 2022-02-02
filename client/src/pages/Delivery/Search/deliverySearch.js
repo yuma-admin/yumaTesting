@@ -5,7 +5,7 @@ import PlacesAutocomplete, {
 } from "react-places-autocomplete";
 import { FaSearch } from 'react-icons/fa';
 import {BiCurrentLocation} from 'react-icons/bi'
-import '../../storeFinder/search/search.css';
+import './deliverysearch.css';
 import triangulate from "../../storeFinder/search/triangulate";
 
 
@@ -57,7 +57,7 @@ export default function Search(props) {
 
   // JSX for search bar. Extensively uses the react-places-autocomplete library 
   return (
-    <div className='search-bar-container'>
+    <div className='delivery-search-bar-container'>
       {/* PlacesAutoComplete library  */}
       <PlacesAutocomplete
         value={address}
@@ -65,11 +65,11 @@ export default function Search(props) {
         onSelect={handleSelect}
       >
         {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
-          <div className='search-input-container'>
+          <div className='delivery-search-input-container'>
 
             <div className='icon'><FaSearch/></div>
             <button className='geoLocationButton' onClick={() => getGeoLocation()}><BiCurrentLocation/></button>
-            <input id='menuSearch' className='search-input' {...getInputProps({ placeholder: "Where are we headed?" })} />
+            <input id='menuSearch' className='delivery-search-input' {...getInputProps({ placeholder: "Where are we headed?" })} />
 
             <div>
               {loading ? <div></div> : null}

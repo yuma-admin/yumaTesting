@@ -43,9 +43,9 @@ function Delivery() {
     return (
         <div className='container-fluid'>
             <div className='deliveryHeader'>
-                        <h1>
-                        FOR 30% OFF YOUR FIRST DELIVERY ORDER NOW!
-                        </h1>
+                        <h2>
+                        FOR 30% OFF YOUR FIRST DELIVERY <strong>ORDER NOW!</strong>
+                        </h2>
                     </div>
 
                 <div xs={{span:12,order:1}} sm={{span:12,order:1}} lg={{span:8,order:2}} className='deliveryInfo'>
