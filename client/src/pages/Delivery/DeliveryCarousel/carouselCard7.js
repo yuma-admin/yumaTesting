@@ -1,6 +1,6 @@
 import React  from 'react';
 import './carouselcard.css';
-import Accessories from './Images/Accessories.png';
+import Topicals from './Images/Topicals.png';
 
 function CarouselCard() {
 
@@ -8,10 +8,11 @@ function CarouselCard() {
         <div className='card-container'>
             <div className='carousel-card'>
                 <div className='image-container'>
-                    <img className="carousel-images" src={Accessories}/>
+                    <img className="carousel-images" src={Topicals}/>
                 </div>
-                {/* <a href="#">Accessories</a> */}
+                {/* <a className='carousel-links' href="#">Topicals</a> */}
             </div>
+            <button className='carousel-buttons'>Topicals</button>
         </div>
     );
 }

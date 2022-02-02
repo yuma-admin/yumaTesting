@@ -32,7 +32,7 @@ const ColoradoFaqs = () => {
         }
 
     return (
-      <div>
+      <div className='container'>
         <h1 className="faqsTitle">FAQs</h1>
         <div className='faqButtons'>
             <button onClick={coFaqs}>Colorado FAQS</button><button onClick={miFaqs}>Michigan FAQS</button>

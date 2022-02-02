@@ -29,8 +29,8 @@ function miFaqs() {
 }
 
   return (
-    <div>
-      <h1 className="faqsTitle">Frequently Asked Questions</h1>
+    <div className='container'>
+      <h1 className="faqsTitle">FAQs</h1>
         <div className='faqButtons'>
             <button onClick={coFaqs}>Colorado FAQS</button><button onClick={miFaqs}>Michigan FAQS</button>
         </div>

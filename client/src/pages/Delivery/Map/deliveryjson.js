@@ -16,7 +16,7 @@ const deliveryjson = [
         lng: -105.031516,
         phone:'(720) 362-7095',
         circle: {
-            radius: 3000,
+            radius: 100000,
             options: {
                 strokeColor: '#d9aa75'
             },
@@ -59,7 +59,7 @@ const deliveryjson = [
         lat: 43.603160,
         lng: -83.877330,
         circle: {
-            radius: 3000,
+            radius: 100000,
             options: {
                 strokeColor: '#d9aa75'
             },

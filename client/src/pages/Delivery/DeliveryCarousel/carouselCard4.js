@@ -10,8 +10,9 @@ function CarouselCard4() {
                 <div className='image-container'>
                     <img className="carousel-images" src={Concentrates}/>
                 </div>
-                {/* <a href="#">Accessories</a> */}
+                {/* <a className='carousel-links' href="#">Concentrates</a> */}
             </div>
+            <button className='carousel-buttons'>Concentrates</button>
         </div>
     );
 }

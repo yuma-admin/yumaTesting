@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { GoogleMap, Circle, InfoWindow, withGoogleMap } from 'react-google-maps';
-import MapStyles from '../../storeFinder/map/mapStyles';
+import deliverymapStyles from './deliverymapStyles';
 import deliveryjson from './deliveryjson';
-// import '../../storeFinder/map/Mapstyles.css';
+import './deliverymapstyles.css';
 
 
 export default function DeliveryMaps(props) {
     const zoom = parseInt(props.zoom)
     const center = props.center
     const options = {
-        styles: mapStyles,
+        styles: deliverymapStyles,
         disableDefaultUI: true,
         zoomControl: true,
         clickableIcons: true
@@ -35,6 +35,7 @@ function DeliveryMap() {
               setdeliveryStore(coordinates)
             }}
         >
+        {deliveryStore && deliveryStore.id === coordinates.id}
         </Circle>
         ))}    
         </GoogleMap>

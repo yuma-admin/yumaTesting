@@ -134,7 +134,7 @@ function App() {
           </Route>
 
           <Route exact path="/delivery">
-            <DeliveryCarousel/>
+            <Delivery/>
           </Route>
 
           {/* <Route exact path="/delivery-carousel">

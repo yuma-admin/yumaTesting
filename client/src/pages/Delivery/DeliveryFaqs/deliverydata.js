@@ -2,7 +2,7 @@ const deliverydata =[
     {
         id: 1,
         question: 'How do I place a cannabis delivery order in Denver?',
-        answer: 'We have partnered with I Heart Jane for our delivery orders. Follow this link to access their Yuma Way Cannabis-specific delivery menubar.'
+        answer: 'Follow this link to access their Yuma Way Cannabis-specific delivery menu.'
 
     },
     {
@@ -13,7 +13,7 @@ const deliverydata =[
     {
         id: 3,
         question: 'Is there a minimum delivery order amount or delivery fee?',
-        answer: 'The minimum order is $50. The delivery fee is $10 regardless of the size of the order.'
+        answer: 'The minimum order is $50. The delivery fee is $10 for orders under $200.'
     },
     {
         id: 4,
@@ -28,22 +28,22 @@ const deliverydata =[
     {
         id: 6,
         question: 'How long should I expect my order to arrive?',
-        answer: 'It may take a few hours for your order to be delivered. This is mainly due to the limited number of companies who are currently licensed to deliver cannabis. Your driver may have to make multiple stops before arriving at your address.'
+        answer: 'It may take a few hours for your order to be delivered. Your driver may have to make multiple stops before arriving at your address.'
     },
     {
         id: 7,
         question: 'Can I place more than one order in a day?',
-        answer: 'No. Just as with visiting a dispensary, state law allows for only one recreational marijuana purchase per day. As such, if you have come into the shop that day and made a purchase at the store, you will not be allowed a delivery order and vice versa.'
+        answer: 'Yes, as long as it does not exceed your daily limit.'
     },
     {
         id: 8,
         question: 'Where can I deliver my order to?',
-        answer: 'The law requires that all cannabis deliveries go to a residential address, but they do not have to go to YOUR residential address. If you are ordering from a friend’s house that’s fine. But you are not allowed to place orders from a non-residential address such as an office or hotel. Currently, we can only deliver to Denver addresses. Input your address here to check whether we can deliver to your address.'
+        answer: 'The law requires that all cannabis deliveries go to a residential address.'
     },
     {
         id: 9,
         question: 'How can I pay for my order?',
-        answer: 'Per the law, orders have to be paid in exact change.'
+        answer: 'Orders can be paid using Aeropay at the time of check out or with cash using exact change (our driver’s do not carry change).'
     },
     {
         id: 10,
@@ -73,8 +73,13 @@ const deliverydata =[
     {
         id: 15,
         question: 'What if my order is incorrect or missing items?',
-        answer: 'We strive to ensure orders are correct prior to leaving our facility. At the time of delivery, we will review the order with you to ensure it is correct. If something is wrong with your order you may choose to accept or reject the entire order.'
+        answer: 'We strive to ensure orders are correct prior to leaving our facility. At the time of delivery, we will review the order with you to ensure it is correct. If something is wrong with your order please call the store for assistance.'
     },
+    {
+        id: 16,
+        question: 'What kind of identification do you accept?',
+        answer: 'An operator’s, chauffeur’s, or similar type driver’s license, including a temporary license issued by any state within the United States, District of Columbia, or any U.S. territory; 2. An identification card, including a temporary identification card, issued by any state within the United States, District of Columbia, or any U.S. territory, for the purpose of proof of age using requirements similar to those in sections 3. A United States military identification card or any other identification card issued by the United States government including but not limited to a permanent resident card, alien registration card, or consular card; 4. A passport or passport identification card; or 5. An Enrollment card issued by the governing authority of a federally recognized Indian tribe, if the enrollment card incorporates proof of age requirements similar to sections . Identification Must Be Valid. A Licensee shall refuse the Transfer of Regulated Marijuana if a person produces identification that is invalid or expired.'
+    }
 ]
 
 export default deliverydata
