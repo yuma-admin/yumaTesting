@@ -57,25 +57,25 @@ function Delivery() {
                         <h3 className='floatSub'>
                             8am - 9pm
                         </h3>
-                        <ol className='floatList'>
-                            <li>Create an account</li>
-                            <li>Verify your I.D.</li>
-                            <li>Place your order</li>
-                            <ul>
-                                <li>Residential delivery only</li>
-                                <li>Must be 21+ to order</li>
-                                <li>Must be present at time of delivery</li>
-                            </ul>
-                            <li>Pay with cash only</li>
-                            <li>Enjoy!</li>
-                        </ol>
+                        <div className='floatList'>
+                            <p>1. Create an account</p>
+                            <p>2. Verify your I.D.</p>
+                            <p>3. Place your order</p>
+                            <div className='indentedList'>
+                                <p>* Residential delivery only</p>
+                                <p>* Must be 21+ to order</p>
+                                <p>* Must be present at time of delivery</p>
+                            </div>
+                            <p>4. Pay with cash only</p>
+                            <p>5. Enjoy!</p>
+                        </div>
                         <DeliverySearch callBack = {setStoreDistance}></DeliverySearch>
                         </div>
                     </div>
-                    <div className='stickyMap desktopMap'> 
+                    <div className='stickyMap deliveryDesktopMap'> 
                             <DeliveryMap center={mapParams.center} zoom={mapParams.zoom} windowSize={'calc(100vh  - 70px - 55px)'}></DeliveryMap> 
                         </div>
-                         <div className='stickyMap mobileMap'> 
+                         <div className='stickyMap deliveryMobileMap'> 
                             <DeliveryMap center={mapParams.center} zoom={mapParams.zoom -2} windowSize={'70vh'}></DeliveryMap> 
                         </div>
                 </div>

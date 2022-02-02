@@ -36,11 +36,15 @@
     color: #d9ab73;
     text-align: center;
     font-weight: bolder;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 65px;
 }
 
 .floatSub {
     text-align: center;
     color: whitesmoke;
+    font-family: 'Crimson Pro';
+    font-size: 45px;
 }
 
 .floatList {
@@ -49,6 +53,15 @@
     justify-content: space-evenly;
     padding: 15px;
     margin-top: 10px;
+    font-family: 'Crimson Pro';
+    font-weight: bolder;
+    font-size: 25px;
+    text-align: center;
+}
+
+.indentedList p {
+    text-indent: 1rem;
+    font-style: italic;
 }
 
 @media (min-width: 991px) {
@@ -114,20 +127,20 @@
       display: block !important;
       z-index: 1;
     }
-    .desktopMap {
+    .deliveryDesktopMap {
       display: none;
     }
-    .mobileMap {
+    .deliveryMobileMap {
       display: block !important;
     }
   }
 
-  .desktopMap {
+  .deliveryDesktopMap {
       width: 50%;
       height: fit-content;
   }
   
-  .mobileMap {
+  .deliveryMobileMap {
     display: none;
   }
   .mobileSearch {
