@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai'
 
+//This Page Instructs the Accordion to Open and Close
+
 const deliveryQuestion = ({ question, answer }) => {
     const [expanded, setExpanded] = useState(false)
 

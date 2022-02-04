@@ -37,7 +37,9 @@ import DeepLink from "./pages/DeepLinkingTest/deeplinking";
 //Testing Carousel Menu
 import DeliveryCarousel from "./pages/Delivery/DeliveryCarousel/deliveryCarousel";
 
-//Testing Deep Linking
+//Testing Delivery Menu Page
+import DeliveryMenu from "./pages/Delivery/DeliveryMenu/deliveryMenu";
+import MenuTest from "./pages/Delivery/DeliveryMenu/menuTest";
 
 function App() {
 
@@ -135,6 +137,10 @@ function App() {
 
           <Route exact path="/delivery">
             <Delivery/>
+          </Route>
+
+          <Route exact path= '/deliverytest'>
+            <DeliveryMenu />
           </Route>
 
           {/* <Route exact path="/delivery-carousel">

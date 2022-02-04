@@ -59,8 +59,9 @@ function carouselFinal() {
             <Carousel
             cards ={cards}
             height = "150px"
-            margin = "0 auto"
-            padding = "35px"
+            margin = "15px 10px 15px 10px"
+            padding = "45px"
+            align-items = "center"
             offset = {2}
             showArrows = {false}
             /> 

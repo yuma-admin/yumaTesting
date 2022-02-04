@@ -18,23 +18,20 @@
     height: 125px;
 }
 
-.card-container .carousel-card .carousel-links {
-    font-family: 'Crimson Text Pro', sans-serif;
+.card-container .carousel-card {
     font-weight: bolder;
     color: #d9ab73;
-    margin-left: 25%;
-    /* margin-right: 25%; */
+    margin-right: 25%;
     text-align: center;
     text-decoration: none;
 }
 
 .carousel-buttons {
-    margin-left: 25%;
-    padding: 0;
     border: none;
     font-size: 20px;
     background: none;
-    color: whitesmoke;
-    text-align: center;
+    color: #d9ab73;
+    align-items: center;
     outline: none;
+    font-family: 'Crimson Pro', sans-serif;
 }

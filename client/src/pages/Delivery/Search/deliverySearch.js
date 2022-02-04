@@ -3,10 +3,10 @@ import PlacesAutocomplete, {
   geocodeByAddress,
   getLatLng
 } from "react-places-autocomplete";
-import { FaSearch } from 'react-icons/fa';
-import {BiCurrentLocation} from 'react-icons/bi'
 import './deliverysearch.css';
 import triangulate from "../../storeFinder/search/triangulate";
+import { IoLocationSharp } from "react-icons/io5";
+import deliveryjson from '../Map/deliveryjson';
 
 
 
@@ -67,9 +67,9 @@ export default function Search(props) {
         {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
           <div className='delivery-search-input-container'>
 
-            <div className='icon'><FaSearch/></div>
-            <button className='geoLocationButton' onClick={() => getGeoLocation()}><BiCurrentLocation/></button>
-            <input id='menuSearch' className='delivery-search-input' {...getInputProps({ placeholder: "Where are we headed?" })} />
+            {/* <div className='icon'><IoLocationSharp/></div> */}
+            <button className='delivery-geoLocationButton' onClick={() => getGeoLocation()}><IoLocationSharp/></button>
+            <input id='delivery-menuSearch' className='delivery-search-input' {...getInputProps({ placeholder: "Where are we headed?" })} />
 
             <div>
               {loading ? <div></div> : null}

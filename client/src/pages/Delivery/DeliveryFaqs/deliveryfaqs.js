@@ -3,6 +3,7 @@ import '../DeliveryFaqs/deliveryfaqs.css';
 import DeliveryAccordion from './deliveryQuestions';
 import deliverydata  from './deliverydata';
 
+//This Page Passes the Questions and Answers props 
 
 function deliveryfaqs() {
     const [questions, setQuestions] = useState(deliverydata)

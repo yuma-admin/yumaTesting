@@ -1,0 +1,27 @@
+.deliveryBanner {
+    background-image: url(../Images/unionzoom.png);
+    background-size: stretch;
+    height: 300px;
+    width: 100%;
+    border: 2px solid #d9ab73;
+}
+
+.deliveryTitle {
+    padding: 75px 65px 0px 65px;
+    text-align: center;
+    justify-content: space-between;
+    color: whitesmoke;
+    font-size: 65px;
+    letter-spacing: 1.2rem;
+}
+
+.deliveryHours {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 15px;
+}
+
+
+
+
