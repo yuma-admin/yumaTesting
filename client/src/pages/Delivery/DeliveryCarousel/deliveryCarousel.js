@@ -4,7 +4,7 @@ import Carousel from './carouselFinal';
 
 function DeliveryCarousel() {
     return (
-        <div className="container-fluid">
+        <div>
             <div className="carousel-container" id="carousel-desktop">
                 <div className="carousel-section carousel-border" id="carousel-desktop">
                     <div className="col-6">
@@ -13,7 +13,6 @@ function DeliveryCarousel() {
                     </div>
                 </div>
             </div>
-            <DeliveryFaqs />
         </div>
 
     )

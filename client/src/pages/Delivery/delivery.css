@@ -49,7 +49,6 @@
 
 .floatList {
     color: #d9ab73;
-    /* text-align: center; */
     justify-content: space-evenly;
     padding: 15px;
     margin-top: 10px;
@@ -64,7 +63,12 @@
     font-style: italic;
 }
 
+.deliveryMobile {
+    display: none;
+}
+
 @media (min-width: 991px) {
+
     .search {
       color: #d9ab73;
       position: sticky;
@@ -74,66 +78,21 @@
       top: 0vh;
       padding-top: 1px;
       margin-bottom: 5vh;
-  
       background-color: rgb(24,24,24, 0.9);
-      box-shadow: 0px -12px 30px 20px rgb(24,24,24);
-      
+      box-shadow: 0px -12px 30px 20px rgb(24,24,24);     
     }
-  
-    /* .deliveryInfo {
-      height: calc(100vh - 70px - 55px);
-      overflow-y:auto;
-      overflow-x:hidden;
-    } */
-  
-    /* .storePageHeight {
-      height: calc(100vh - 70px - 55px);
-      overflow:hidden;
-    }
-   */
-  }
-  
-  
-  /* .search {
-    color: #d9ab73;
-    text-align: center;
-    margin-bottom: 5vh;
-  } */
-  
+
+}  
   
   
   @media (max-width: 991px) {
-  
-    /* .storeFinderInfo  {
-      height: calc(100vh - 70px - 55px);
-      overflow-y: scroll;
-    }
-  
-    .stickyMap {
-      position: relative !important;
-    } */
-    .mapCol {
-      /* position: fixed; */
-      right:0;
-    }
-    .search {
-      display: none;
-    }
-    .storeCards {
-      margin-top: 20px;
-      /* z-index: 1000; */
-    }
+
     .mobileSearch {
       display: block !important;
       z-index: 1;
     }
-    .deliveryDesktopMap {
-      display: none;
-    }
-    .deliveryMobileMap {
-      display: block !important;
-    }
   }
+  
 
   .deliveryDesktopMap {
       width: 50%;
@@ -161,10 +120,6 @@
     padding: 0px !important;
   }
   
-  .selectedStoreInfo {
-    padding: 0px !important;
-  }
-  
   .stickyMap {
     /* position: -webkit-sticky;
     position: sticky; */
@@ -178,4 +133,207 @@
     overflow: hidden;
     /* pointer-events: none; */
   }
-  
+
+@media screen and (max-width:992) {
+    /* .deliveryDesktopMap{
+        display: none;
+    }    */
+}  
+
+@media screen and (max-width: 480px) {
+
+    .deliveryMobile{
+        padding: 0 !important;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    
+    .deliveryDesktop {
+        display: none;
+    }
+
+    .deliveryHeader h2 {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .mobileHours{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        top: 12%;
+        left: 50%;
+        z-index: 1;
+    }
+
+    .mobileHours h2 {
+        position: absolute;
+        text-align: center;
+        color: #3f2301;
+        font-size: 25px;
+        padding: 15px;
+        align-items: center;
+        letter-spacing: .1em;
+        font-family: 'Crimson Pro';
+        z-index: 1;
+    }
+
+    .mobileHours p {
+        position: absolute;
+        text-align: center;
+        color: #251501;
+        font-size: 15px;
+        padding: 40px;
+        align-items: center;
+        letter-spacing: .1em;
+        font-family: 'Crimson Pro';
+        z-index: 1;
+    }
+
+    .deliveryMobileSearch {
+        position: absolute;
+        width: 100%;
+    }
+    
+    .delivery-search-bar-container {
+        position: absolute;
+        margin-top: 125px;
+    }
+
+    .delivery-search-input-container {
+        position: absolute;
+        width: 100%;
+    }
+
+    .stickyMap .deliveryMobileMap{
+        display: block;
+        flex-direction: column;
+    }
+    .stickyMap {
+        width: 100%;
+    }
+    .deliveryMobileMap {
+        width: 100%;
+        height: 50px;
+    }
+
+    .deliveryMobileContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border: 1px solid #d9ab73;
+        margin-right: auto;
+        margin-left: auto;
+        background-image: url(./Images/unionstation.jpg);
+        overflow: hidden;
+        backdrop-filter: blur(50px);
+        -webkit-backdrop-filter: blur(25px);
+        background-size: cover;
+    }
+    .deliveryMobileHeader {
+        color: #d9ab73;
+        text-align: center;
+        font-weight: bolder;
+        font-family: 'Montserrat',sans-serif;
+        font-size: 25px;
+        padding: 10px;   
+    }
+
+    .deliveryMobileList {
+        color: whitesmoke;
+        font-family: 'Crimson Pro';
+        font-weight: bolder;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .carousel-header {
+        display: flex;
+        flex-direction: column;
+        color: whitesmoke;
+        text-align: center;
+        font-size: 13px;
+        padding: 20px;
+    }
+    .carousel-border {
+        position: relative;
+        padding: 0 !important;
+        display: flex
+    }
+    
+    .carousel-border:before {
+        content: '';
+        position: absolute;
+        border: 1px solid #d9ab73;
+        left: 0;
+        right: 0;
+        transform: scale(0.97,0.94);
+        width: 100%;
+        height: 100%;
+    }
+    
+    .carousel-border:after {
+        content: '';
+        position: absolute;
+        border: 1px solid #d9ab73;
+        left: 0;
+        top: 0;
+        right: 0;
+        transform:scale(0.95,0.98);
+        width: 100%;
+        height: 100%;
+    }
+
+    div.carousel-container {
+        display: flex;
+        position: relative;
+        height: 300px;
+    }
+    
+    div.carousel-container .carousel-section {
+        width: 100%;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card-container {
+        position: relative;
+        display: inline;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .card-container .carousel-card {
+        position: relative;
+        width: 100%;
+        background: wheat;
+        border-radius: 10px;
+    }
+    
+    .image-container .carousel-images {
+        background-size: contain;
+        width: 75px;
+        height: 35px;
+    }
+    
+    .card-container .carousel-card {
+        font-weight: bolder;
+        color: #d9ab73;
+        margin-right: 25%;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    .carousel-buttons {
+        border: none;
+        font-size: 8px;
+        background: none;
+        color: #d9ab73;
+        align-items: center;
+        outline: none;
+        font-family: 'Crimson Pro', sans-serif;
+    }
+}  

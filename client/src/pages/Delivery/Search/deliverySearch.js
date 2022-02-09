@@ -82,7 +82,7 @@ export default function Search(props) {
                   'padding-left':"36px",
                   fontFamily: '"Montserrat", sans-serif'
                 };
-
+                
                 return (
                   <div {...getSuggestionItemProps(suggestion, { style })}>
                     {suggestion.description}

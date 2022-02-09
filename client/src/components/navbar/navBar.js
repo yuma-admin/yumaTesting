@@ -20,9 +20,23 @@ const Navbar=() => {
                         <a href="/colorado-deals" className="mainNavItem">Deals</a>
                         <a href="/locations" className="mainNavItem">Shop</a>
                         <a href="/delivery" className='mainNavItem'>Delivery</a>
-                        {/* <a href='/delivery-carousel' className='mainNavItem'>Carousel</a> */}
                     </div>
                 </div>
+            </div>
+        </div>
+        <div className='mobileNav'>
+            <div className='navbarImage'>
+                <a href="/" className='navLogo'>
+                    <img src='/images/homeImages/cropped-TOPNAVLOGO.png' />
+                </a>
+            </div>
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle" />
+            <div className='navMenu'>
+                <a href="/">Home</a>
+                <a href='/colorado-deals'>Deals</a>
+                <a href='/locations'>Shop</a>
+                <a href='/delivery'>Delivery</a>
             </div>
         </div>
     </>
