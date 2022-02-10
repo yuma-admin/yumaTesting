@@ -4,6 +4,7 @@ import DeliveryMap from "./Map/deliverymap";
 import deliveryjson from './Map/deliveryjson';
 import DeliveryFaqs from './DeliveryFaqs/deliveryfaqs';
 import DeliveryCarousel from './DeliveryCarousel/deliveryCarousel';
+import GeolocateButton from './Geolocate Modal/geolocateButton';
 import './delivery.css';
 
 function Delivery() {
@@ -69,6 +70,7 @@ function Delivery() {
                             <p>4. Pay with cash only</p>
                             <p>5. Enjoy!</p>
                         </div>
+                        <GeolocateButton />
                         <DeliverySearch callBack = {setStoreDistance}></DeliverySearch>
                         </div>
                     </div>

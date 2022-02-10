@@ -86,7 +86,6 @@
   
   
   @media (max-width: 991px) {
-
     .mobileSearch {
       display: block !important;
       z-index: 1;
@@ -134,10 +133,10 @@
     /* pointer-events: none; */
   }
 
-@media screen and (max-width:992) {
-    /* .deliveryDesktopMap{
-        display: none;
-    }    */
+@media screen and (max-width: 768px) {
+    .floatHeader {
+        font-size: 45px;
+    }
 }  
 
 @media screen and (max-width: 480px) {
@@ -205,6 +204,11 @@
     .delivery-search-input-container {
         position: absolute;
         width: 100%;
+    }
+
+    .delivery-geoLocationButton{
+        font-size: 20px;
+        color: rgb(217, 170, 117);
     }
 
     .stickyMap .deliveryMobileMap{
