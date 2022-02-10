@@ -1,6 +1,7 @@
 import React from 'react';
 import './deliveryMenu.css';
-import MenuTest from './menuTest';
+import GeolocateButton from '../Geolocate Modal/geolocateButton';
+
 
 //This Page Will Display Once The User is Geolocated and Return the Correct Delivery Menu
 
@@ -17,8 +18,8 @@ function DeliveryMenu() {
                 FOR 30% OFF YOUR FIRST DELIVERY <strong>ORDER NOW!</strong>
                 </h2>
             </div>
+            <GeolocateButton />
         </div>
-        <MenuTest />
         </>
     )
 }

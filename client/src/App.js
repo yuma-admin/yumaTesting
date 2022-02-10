@@ -40,6 +40,7 @@ import DeliveryCarousel from "./pages/Delivery/DeliveryCarousel/deliveryCarousel
 //Testing Delivery Menu Page
 import DeliveryMenu from "./pages/Delivery/DeliveryMenu/deliveryMenu";
 import MenuTest from "./pages/Delivery/DeliveryMenu/menuTest";
+import GeolocateModal from "./pages/Delivery/Geolocate Modal/geolocateModal";
 
 function App() {
 
@@ -139,8 +140,13 @@ function App() {
             <Delivery/>
           </Route>
 
-          <Route exact path= '/deliverytest'>
+
+          <Route exact path= '/delivery/menu'>
             <DeliveryMenu />
+          </Route>
+
+          <Route exact path= '/menutest'>
+            <GeolocateModal />
           </Route>
 
           {/* <Route exact path="/delivery-carousel">

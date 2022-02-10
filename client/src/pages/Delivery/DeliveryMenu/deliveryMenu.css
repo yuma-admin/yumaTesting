@@ -22,6 +22,37 @@
     padding-top: 15px;
 }
 
+.geolocateIframe {
+    padding: 25px;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    position: relative;
+    padding: 0 !important;
+    display: flex
+}
 
+.geolocateIframe:before {
+    content: '';
+    position: absolute;
+    border: 1px solid #d9ab73;
+    left: 0;
+    right: 0;
+    transform: scale(0.97,0.94);
+    width: 100%;
+    height: 100%;
+}
+
+.geolocateIframe:after {
+    content: '';
+    position: absolute;
+    border: 1px solid #d9ab73;
+    left: 0;
+    top: 0;
+    right: 0;
+    transform:scale(0.95,0.98);
+    width: 100%;
+    height: 100%;
+}
 
 

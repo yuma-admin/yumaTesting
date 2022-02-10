@@ -1,22 +1,24 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import ReactDOM from 'react-dom';
+import GeolocateScript from './geolocateScript';
 
 
-function GeolocateModal() {
-
-    const script = document.createElement("script")
-    script.src = `https://api.iheartjane.com/v1/operators/236/embed.js`;
-    script.async = true
-
-    document.body.appendChild(script);
-
-
-    return (
-        <>
-            <div className='container-fluid'>
-            <div class="test" id="jane-frame-script"></div>
-            </div>
-        </>
-    )
-}
+    const GeolocateModal = ({ setShowModal }) => {
+    // This will close the Modal if clicked outside of it
+    const geomodalRef = useRef();
+    const closegeoModal = (e) => {
+        if (e.target === geomodalRef.current) {
+            setShowModal(false);
+        }
+    };
+    // Render the I heart jane geolocator Modal
+    return ReactDOM.createPortal(
+        <div className='geoContainer' ref={geomodalRef} onClick={closegeoModal}>
+                <GeolocateScript />
+                {/* <button onClick={() => setShowModal(false)}>X</button> */}
+        </div>,
+        document.getElementById("root")
+    );
+};
 
 export default GeolocateModal

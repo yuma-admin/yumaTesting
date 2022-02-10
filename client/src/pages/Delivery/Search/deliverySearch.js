@@ -28,32 +28,41 @@ export default function Search(props) {
   };
 
   // Asks the computer to access its geolocation information
-  const getGeoLocation = () => {
-    navigator.geolocation.getCurrentPosition(successfulLookup,unsuccessfulLookup)
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-}
+//   const getGeoLocation = () => {
+//     navigator.geolocation.getCurrentPosition(successfulLookup,unsuccessfulLookup)
+//     window.scrollTo({
+//       top: 0,
+//       behavior: "smooth"
+//     });
+// }
 
 // gets coordinates
-  const successfulLookup = (position) => {
-      const {latitude, longitude} = position.coords
-      setCoordinates({lat:latitude, lng:longitude})
-  }
-  const unsuccessfulLookup = () => {
+  // const successfulLookup = (position) => {
+  //     const {latitude, longitude} = position.coords
+  //     setCoordinates({lat:latitude, lng:longitude})
+  // }
+  // const unsuccessfulLookup = () => {
       
-  }
+  // }
 
 // runs when coordinates change and calls the triangulation function imported from triangulate.js
-  useEffect(() =>  {
-      if (coordinates.lat && coordinates.lng){
-        const closest = triangulate(coordinates.lat,coordinates.lng)
-        props.callBack({stores:closest,zoom:'12',
-        center:{lat: coordinates.lat, lng: coordinates.lng}})
-      }
+  // useEffect(() =>  {
+  //     if (coordinates.lat && coordinates.lng){
+  //       const closest = triangulate(coordinates.lat,coordinates.lng)
+  //       props.callBack({stores:closest,zoom:'12',
+  //       center:{lat: coordinates.lat, lng: coordinates.lng}})
+  //     }
    
-  },[coordinates])
+  // },[coordinates])
+
+
+// Opens Up I hear Jane's geolocator under delivery banner
+
+const returnDelivery = () => {
+  window.location = '/delivery/menu';
+  window.open('/delivery/menu');
+}
+
 
   // JSX for search bar. Extensively uses the react-places-autocomplete library 
   return (
@@ -66,9 +75,8 @@ export default function Search(props) {
       >
         {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
           <div className='delivery-search-input-container'>
-
             {/* <div className='icon'><IoLocationSharp/></div> */}
-            <button className='delivery-geoLocationButton' onClick={() => getGeoLocation()}><IoLocationSharp/></button>
+            <button className='delivery-geoLocationButton' onClick={() => returnDelivery()}><IoLocationSharp/></button>
             <input id='delivery-menuSearch' className='delivery-search-input' {...getInputProps({ placeholder: "Where are we headed?" })} />
 
             <div>
