@@ -1,6 +1,7 @@
 .geobuttonContainer {
     align-self: center;
     display: flex;
+    padding: 25px;
 }
 /* .geobuttonContainer:before {
     content: '';
@@ -28,35 +29,33 @@
     padding: 15px 25px;
     font-size: 1.5rem;
     font-weight: bolder;
-    border:0.16em solid #FFFFFF;
+    border:0.16em solid #d9ab73;
     margin: 0, .3em, .3em, 0;
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
+    font-size: 30px;
     font-weight: 400;
     text-align: center;
     background-color:rgba(0,0,0,0);
-    /* border-radius: 5px; */
-    /* border: none; */
-    /* outline: none; */
-    /* background: #d9ab73; */
-    color: white;
+    color: rgb(7, 6, 6);
     cursor: pointer;
-    font-family: "Crimson Pro", sans-serif;
+    /* font-family: "Crimson Pro", sans-serif; */
 }
 
 #root .geoContainer {
     position: absolute;
-    top: 0;
+    top: 70px;
     left: 0;
     bottom: 0;
     right: 0;
-    height: 100vh;
+    height: 200vh;
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 
-.geoContainer .geoModal {
+/* .geoContainer .geoModal {
     z-index: 1;
     width: 250px;
     height: 220px;
@@ -66,7 +65,7 @@
     border-radius: 5px;
     position: relative;
     animation: animate .3s;
-}
+} */
 
 .geoModal button {
     position: absolute;

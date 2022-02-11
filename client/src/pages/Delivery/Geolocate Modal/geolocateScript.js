@@ -1,4 +1,5 @@
 import React from 'react';
+import {useHistory} from 'react-router-dom'
 
 
 function GeolocateScript() {
@@ -9,16 +10,18 @@ function GeolocateScript() {
 
     document.body.appendChild(script);
 
+    let history = useHistory();
 
-
+    function backClick() {
+      history.push("/");
+    }
 
     return (
         <>
             <div className='container-fluid'>
-            {/* <div className='deliveryContainer'> */}
+            {/* <div onClick={backClick} className="menuBackButtonBar">Back</div> */}
             <div id="jane-frame-script"></div>
             </div>
-            {/* </div> */}
         </>
     )
 }

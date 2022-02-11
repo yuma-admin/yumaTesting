@@ -8,7 +8,7 @@ import deliverydata  from './deliverydata';
 function deliveryfaqs() {
     const [questions, setQuestions] = useState(deliverydata)
     return (
-        <div className="container-fluid">
+        <div>
             <div className="dfaqs-container">
                 <div className=" dfaqs-section dfaqs-border">
                     <div className="col-6">

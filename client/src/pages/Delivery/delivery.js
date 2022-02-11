@@ -58,7 +58,7 @@ function Delivery() {
                         <h3 className='floatSub'>
                             8am - 9pm
                         </h3>
-                        <div className='floatList'>
+                        {/* <div className='floatList'>
                             <p>1. Create an account</p>
                             <p>2. Verify your I.D.</p>
                             <p>3. Place your order</p>
@@ -69,19 +69,19 @@ function Delivery() {
                             </div>
                             <p>4. Pay with cash only</p>
                             <p>5. Enjoy!</p>
-                        </div>
+                        </div> */}
                         <GeolocateButton />
-                        <DeliverySearch callBack = {setStoreDistance}></DeliverySearch>
+                        {/* <DeliverySearch callBack = {setStoreDistance}></DeliverySearch> */}
                         </div>
                     </div>
                     <div className='stickyMap deliveryDesktopMap'> 
-                            <DeliveryMap center={mapParams.center} zoom={mapParams.zoom} windowSize={'100vh'}></DeliveryMap> 
+                            <DeliveryMap center={mapParams.center} zoom={mapParams.zoom} windowSize={'50vh'}></DeliveryMap> 
                         </div>
                          <div className='stickyMap deliveryMobileMap'> 
                             <DeliveryMap center={mapParams.center} zoom={mapParams.zoom -2} windowSize={'70vh'}></DeliveryMap> 
-                        </div>
+                        </div>       
                 </div>
-            <DeliveryCarousel />
+            {/* <DeliveryCarousel /> */}
             <DeliveryFaqs />
             </div>
             <div className='deliveryMobile'>
@@ -98,9 +98,9 @@ function Delivery() {
                         8am - 9pm
                     </p>
                 </div>
-                <div className='deliveryMobileSearch'>
+                {/* <div className='deliveryMobileSearch'>
                     <DeliverySearch callBack = {setStoreDistance}></DeliverySearch>
-                </div>
+                </div> */}
                 <div className='stickyMap deliverymobileMap'> 
                     <DeliveryMap center={mapParams.center} zoom={mapParams.zoom -2} windowSize={'60vh'}></DeliveryMap>
                 </div> 
@@ -108,7 +108,7 @@ function Delivery() {
                     <h2 className='deliveryMobileHeader'>
                     How To Get Delivery
                     </h2>
-                    <div className='deliveryMobileList'>
+                    {/* <div className='deliveryMobileList'>
                             <p>1. Create an account</p>
                             <p>2. Verify your I.D.</p>
                             <p>3. Place your order</p>
@@ -119,9 +119,9 @@ function Delivery() {
                             </div>
                             <p>4. Pay with cash only</p>
                             <p>5. Enjoy!</p>
-                    </div>
+                    </div> */}
                 </div> 
-                <DeliveryCarousel />       
+                {/* <DeliveryCarousel />        */}
             </div>
         </div>
     )

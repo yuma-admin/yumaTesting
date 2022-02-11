@@ -39,17 +39,17 @@ div.dfaqs-container .dfaqs-section {
     position: relative;
     justify-content: center;
     align-items: center;
-    z-index: 2;
     min-height: 40vh;
     background-color: white;
 }
 
 .dfaqs-header {
-    color:#d9ab73;
+    color:#9c6d34;
     text-align: center;   
     font-size: 30px;
     padding: 50px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Crimson Pro", sans-serif;
+    font-weight: 700;
 }
 
 
