@@ -33,7 +33,7 @@
 }
 
 .floatHeader {
-    color: #c78f4a;
+    color: #623703;
     text-align: center;
     font-weight: bolder;
     font-family: 'Montserrat',sans-serif;
@@ -42,9 +42,10 @@
 
 .floatSub {
     text-align: center;
-    color: whitesmoke;
+    color: black;
     font-family: 'Crimson Pro';
     font-size: 45px;
+    font-weight: 500;
 }
 
 .floatList {
@@ -340,4 +341,44 @@
         outline: none;
         font-family: 'Crimson Pro', sans-serif;
     }
+
+    .geobuttonContainer {
+        align-self: center;
+        position: absolute;
+        display: flex;
+        padding: 115px;
+        right: 60%;
+    }
+
+    .geobuttonContainer button {
+        padding: 15px 25px;
+        font-size: 1rem;
+        font-weight: bolder;
+        border:0.16em solid #623703;
+        margin: 0, .3em, .3em, 0;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+        background-color:rgba(0,0,0,0);
+        color: rgb(7, 6, 6);
+        cursor: pointer;
+        z-index: 1;
+
+    }
+    
+    #root .geoContainer {
+        position: absolute;
+        top: 45px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        z-index: 1;
+    }
+
 }  

@@ -6,8 +6,11 @@ import './deliverymapstyles.css';
 
 
 export default function DeliveryMaps(props) {
-    const zoom = parseInt(props.zoom)
-    const center = props.center
+    const zoom = 10
+    const [ center, setCenter ] = useState({
+        lat: 39.74,
+        lng: -105
+    })
     const options = {
         styles: deliverymapStyles,
         disableDefaultUI: true,
@@ -22,7 +25,7 @@ function DeliveryMap() {
     return (
         <GoogleMap
         defaultZoom={zoom}
-        defaultCenter={{lat: center.lat, lng: center.lng}}
+        defaultCenter={center}
         options={options}
         >
         {deliveryjson.map((coordinates) => (

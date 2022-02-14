@@ -98,6 +98,7 @@ function Delivery() {
                         8am - 9pm
                     </p>
                 </div>
+                <GeolocateButton />
                 {/* <div className='deliveryMobileSearch'>
                     <DeliverySearch callBack = {setStoreDistance}></DeliverySearch>
                 </div> */}
@@ -105,9 +106,9 @@ function Delivery() {
                     <DeliveryMap center={mapParams.center} zoom={mapParams.zoom -2} windowSize={'60vh'}></DeliveryMap>
                 </div> 
                 <div className='deliveryMobileContainer'>
-                    <h2 className='deliveryMobileHeader'>
+                    {/* <h2 className='deliveryMobileHeader'>
                     How To Get Delivery
-                    </h2>
+                    </h2> */}
                     {/* <div className='deliveryMobileList'>
                             <p>1. Create an account</p>
                             <p>2. Verify your I.D.</p>

@@ -26,10 +26,11 @@
     height: 100%;
 } */
 .geobuttonContainer button {
+    /* position: fixed; */
     padding: 15px 25px;
     font-size: 1.5rem;
     font-weight: bolder;
-    border:0.16em solid #d9ab73;
+    border:0.16em solid #623703;
     margin: 0, .3em, .3em, 0;
     text-decoration: none;
     text-transform: uppercase;
