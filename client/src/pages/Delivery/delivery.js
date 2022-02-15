@@ -51,7 +51,6 @@ function Delivery() {
                     </div>
                 <div  className='deliveryInfo'>
                     <div className='deliveryFloat'>
-                    <div className='floatContainer'>
                         <h2 className='floatHeader'>
                             DELIVERY
                         </h2>
@@ -75,10 +74,9 @@ function Delivery() {
                         </div> */}
                         <GeolocateButton />
                         {/* <DeliverySearch callBack = {setStoreDistance}></DeliverySearch> */}
-                        </div>
                     </div>
                     <div className='stickyMap deliveryDesktopMap'> 
-                            <DeliveryMap center={mapParams.center} zoom={mapParams.zoom} windowSize={'50vh'}></DeliveryMap> 
+                            <DeliveryMap center={mapParams.center} zoom={mapParams.zoom} windowSize={'100vh'}></DeliveryMap> 
                         </div>
                          <div className='stickyMap deliveryMobileMap'> 
                             <DeliveryMap center={mapParams.center} zoom={mapParams.zoom -2} windowSize={'70vh'}></DeliveryMap> 
