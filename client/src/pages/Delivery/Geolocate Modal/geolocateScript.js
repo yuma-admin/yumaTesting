@@ -10,16 +10,13 @@ function GeolocateScript() {
 
     document.body.appendChild(script);
 
-    let history = useHistory();
 
-    function backClick() {
-      history.push("/");
-    }
+
 
     return (
         <>
             <div className='container-fluid'>
-            {/* <div onClick={backClick} className="menuBackButtonBar">Back</div> */}
+            {/* <div onClick={() => setShowModal(false)} className="deliveryBackButtonBar">Back</div> */}
             <div id="jane-frame-script"></div>
             </div>
         </>

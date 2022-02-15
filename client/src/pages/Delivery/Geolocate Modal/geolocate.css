@@ -3,28 +3,7 @@
     display: flex;
     padding: 25px;
 }
-/* .geobuttonContainer:before {
-    content: '';
-    position: absolute;
-    border: 1px solid #d9ab73;
-    left: 0;
-    right: 0;
-    transform: scale(0.97,0.94);
-    width: 100%;
-    height: 100%;
-}
 
-.geobuttonContainer:after {
-    content: '';
-    position: absolute;
-    border: 1px solid #d9ab73;
-    left: 0;
-    top: 0;
-    right: 0;
-    transform:scale(0.95,0.98);
-    width: 100%;
-    height: 100%;
-} */
 .geobuttonContainer button {
     /* position: fixed; */
     padding: 15px 25px;
@@ -45,7 +24,6 @@
     outline: none !important;
 }
 
-
 #root .geoContainer {
     position: absolute;
     top: 70px;
@@ -53,22 +31,9 @@
     bottom: 0;
     right: 0;
     height: 100vh;
-    display: flex;
     justify-content: center;
     z-index: 100;
 }
-
-/* .geoContainer .geoModal {
-    z-index: 1;
-    width: 250px;
-    height: 220px;
-    background: white;
-    display: flex;
-    align-items: center;
-    border-radius: 5px;
-    position: relative;
-    animation: animate .3s;
-} */
 
 .geoModal button {
     position: absolute;
@@ -82,13 +47,26 @@
     cursor: pointer;
 }
 
-@keyframes animate {
-    from {
-        transform: scale(.5);
-    }
-    to {
-        transform: scale(1);
-    }
-}
 
+.deliveryBackButtonBar {
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    padding: 15px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    font-size: 14px;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin: 5px 5px 5px 20px;
+    width: 100px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-weight: bold;
+    height: 40px;
+    white-space: nowrap;
+    background-color: rgb(182, 175, 144);
+    border-radius: 5px;
+}
 
