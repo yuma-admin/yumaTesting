@@ -62,15 +62,17 @@ div.dfaqs-container .dfaqs-section {
     margin-bottom: 1rem;
     border-radius: .25rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    font-weight: 900;
 }
 
 .dQuestion h3 {
     text-transform: none;
     line-height: 1.5;
-    font-size: 20px;
+    font-size: 30px;
     color: gainsboro;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Crimson Pro", sans-serif;
     font-weight: bolder;
+    font-weight: 900;
 }
 
 .dQuestion p {

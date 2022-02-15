@@ -14,8 +14,8 @@ import GeolocateScript from './geolocateScript';
     // Render the I heart jane geolocator Modal
     return ReactDOM.createPortal(
         <div className="geoContainer" ref={geomodalRef} onClick={closegeoModal}>
-                <GeolocateScript />
-                {/* <button onClick={() => setShowModal(false)}>X</button> */}
+        {/* <button onClick={() => setShowModal(false)}>X</button> */}
+            <GeolocateScript />
         </div>,
         document.getElementById("root")
     );

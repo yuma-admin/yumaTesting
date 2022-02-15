@@ -28,8 +28,8 @@
 }
 
 .floatContainer {
-    padding: 10px 10px 10px 10px;
-    margin: 45px 45px 45px 45px;
+    /* padding: 10px 10px 10px 10px;
+    margin: 45px 45px 45px 45px; */
 }
 
 .floatHeader {
@@ -48,18 +48,14 @@
     font-weight: 500;
 }
 
-.floatList {
-    color: #d9ab73;
+.floatList p {
+    color: black;
     justify-content: space-evenly;
-    padding: 15px;
     margin-top: 10px;
     font-family: 'Crimson Pro';
     font-weight: bolder;
     font-size: 25px;
     text-align: center;
-}
-
-.indentedList p {
     text-indent: 1rem;
     font-style: italic;
 }

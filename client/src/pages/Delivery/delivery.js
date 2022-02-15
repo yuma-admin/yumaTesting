@@ -58,6 +58,9 @@ function Delivery() {
                         <h3 className='floatSub'>
                             8am - 9pm
                         </h3>
+                        <div className='floatList'>
+                        <p>* Residential delivery only</p>
+                        </div>
                         {/* <div className='floatList'>
                             <p>1. Create an account</p>
                             <p>2. Verify your I.D.</p>

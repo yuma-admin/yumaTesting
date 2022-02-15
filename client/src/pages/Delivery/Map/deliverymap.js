@@ -28,7 +28,7 @@ function DeliveryMap() {
         defaultCenter={center}
         options={options}
         >
-        {deliveryjson.map((coordinates) => (
+        {/* {deliveryjson.map((coordinates) => (
         <Circle    
         key={coordinates.id}
         defaultCenter={{lat: coordinates.lat, lng: coordinates.lng}}
@@ -40,7 +40,7 @@ function DeliveryMap() {
         >
         {deliveryStore && deliveryStore.id === coordinates.id}
         </Circle>
-        ))}    
+        ))}     */}
         </GoogleMap>
     )
 }
