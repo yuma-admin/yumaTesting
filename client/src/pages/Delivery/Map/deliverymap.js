@@ -36,7 +36,22 @@ function DeliveryMap() {
               setdeliveryStore(coordinates)
             }}
         >
-        {deliveryStore && deliveryStore.id === coordinates.id}
+        {deliveryStore&& deliveryStore.id === coordinates.id && (
+              // Creates the window that pops up when a marker is clicked
+        <InfoWindow onCloseClick={() => setdeliveryStore(null)}
+         >
+             <div className='infoWindow'>
+               <a class="mapStoreLink" href={deliveryStore.href}>
+                <img className='storeImage' src={`${process.env.PUBLIC_URL}${deliveryStore.exteriorStore}`} alt=''></img>
+                <img className='storeLogo' src={`${process.env.PUBLIC_URL}${deliveryStore.logoPinch}`} alt=''></img>
+                <h4 id='address'>{deliveryStore.address1}</h4>
+                <h4 id='address'>{deliveryStore.address2}</h4>
+                <h3 className='phone'>{deliveryStore.phone}</h3>
+               </a>
+               {/* <h3 className='phone'><a className='phoneLink' href={selectedStore.phone}>{selectedStore.phone}</a></h3> */}
+             </div>
+           </InfoWindow>
+         )}
         </Marker>
         ))}    
         </GoogleMap>
