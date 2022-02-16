@@ -76,7 +76,7 @@ function Delivery() {
                         {/* <DeliverySearch callBack = {setStoreDistance}></DeliverySearch> */}
                     </div>
                     <div className='stickyMap deliveryDesktopMap'> 
-                            <DeliveryMap center={mapParams.center} zoom={mapParams.zoom} windowSize={'90vh'}></DeliveryMap> 
+                            <DeliveryMap center={mapParams.center} zoom={mapParams.zoom} windowSize={'80vh'}></DeliveryMap> 
                         </div>   
                 </div>
             {/* <DeliveryCarousel /> */}

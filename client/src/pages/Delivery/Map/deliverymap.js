@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { GoogleMap, Circle, InfoWindow, withGoogleMap } from 'react-google-maps';
+import { GoogleMap, Marker, InfoWindow, withGoogleMap } from 'react-google-maps';
 import deliverymapStyles from './deliverymapStyles';
 import deliveryjson from './deliveryjson';
 import './deliverymapstyles.css';
 
 
 export default function DeliveryMaps(props) {
-    const zoom = 10
+    const zoom = 9
     const [ center, setCenter ] = useState({
         lat: 39.74,
         lng: -105
@@ -28,19 +28,17 @@ function DeliveryMap() {
         defaultCenter={center}
         options={options}
         >
-        {/* {deliveryjson.map((coordinates) => (
-        <Circle    
+        {deliveryjson.map((coordinates) => (
+        <Marker    
         key={coordinates.id}
-        defaultCenter={{lat: coordinates.lat, lng: coordinates.lng}}
-        radius={coordinates.circle.radius}
-        options={coordinates.circle.options}
+        position={{lat: coordinates.lat, lng: coordinates.lng}}
         onClick={() => {
               setdeliveryStore(coordinates)
             }}
         >
         {deliveryStore && deliveryStore.id === coordinates.id}
-        </Circle>
-        ))}     */}
+        </Marker>
+        ))}    
         </GoogleMap>
     )
 }
