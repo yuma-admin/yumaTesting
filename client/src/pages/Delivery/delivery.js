@@ -58,7 +58,7 @@ function Delivery() {
                             8am - 9pm
                         </h3>
                         <div className='floatList'>
-                        <p>* Residential delivery only</p>
+                        <p>* Delivery To Residential Addresses Only</p>
                         </div>
                         {/* <div className='floatList'>
                             <p>1. Create an account</p>
@@ -76,11 +76,8 @@ function Delivery() {
                         {/* <DeliverySearch callBack = {setStoreDistance}></DeliverySearch> */}
                     </div>
                     <div className='stickyMap deliveryDesktopMap'> 
-                            <DeliveryMap center={mapParams.center} zoom={mapParams.zoom} windowSize={'100vh'}></DeliveryMap> 
-                        </div>
-                         <div className='stickyMap deliveryMobileMap'> 
-                            <DeliveryMap center={mapParams.center} zoom={mapParams.zoom -2} windowSize={'70vh'}></DeliveryMap> 
-                        </div>       
+                            <DeliveryMap center={mapParams.center} zoom={mapParams.zoom} windowSize={'90vh'}></DeliveryMap> 
+                        </div>   
                 </div>
             {/* <DeliveryCarousel /> */}
             <DeliveryFaqs />
