@@ -8,10 +8,9 @@ import deliverydata  from './deliverydata';
 function deliveryfaqs() {
     const [questions, setQuestions] = useState(deliverydata)
     return (
-        <div>
             <div className="dfaqs-container">
                 <div className=" dfaqs-section dfaqs-border">
-                    <div className="col-6">
+                    <div>
                         <h2 className="dfaqs-header">
                             FREQUENTLY ASKED QUESTIONS    
                         </h2>
@@ -23,8 +22,7 @@ function deliveryfaqs() {
                     </div>
                 </div>    
             </div>
-        </div>
-    )
+            )
 }
 
 export default deliveryfaqs

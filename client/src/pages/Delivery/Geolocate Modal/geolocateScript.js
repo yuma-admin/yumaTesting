@@ -1,6 +1,7 @@
 import React from 'react';
 import {useHistory} from 'react-router-dom'
 
+// Script From I Heart Jane to Geolocate User.
 
 function GeolocateScript() {
 

@@ -1,3 +1,5 @@
+// For Future Developments. Was Included in Mockups But Later Dropped. Here's the code if that changes
+
 import CarouselCard1 from "./CarouselCards/carouselCard1";
 import CarouselCard2 from "./CarouselCards/carouselCard2";
 import CarouselCard3 from "./CarouselCards/carouselCard3";

@@ -103,11 +103,11 @@ function Delivery() {
                 <div className='stickyMap deliverymobileMap'> 
                     <DeliveryMap center={mapParams.center} zoom={mapParams.zoom -2} windowSize={'60vh'}></DeliveryMap>
                 </div> 
-                <div className='deliveryMobileContainer'>
-                    {/* <h2 className='deliveryMobileHeader'>
+                {/* <div className='deliveryMobileContainer'>
+                    <h2 className='deliveryMobileHeader'>
                     How To Get Delivery
-                    </h2> */}
-                    {/* <div className='deliveryMobileList'>
+                    </h2>
+                    <div className='deliveryMobileList'>
                             <p>1. Create an account</p>
                             <p>2. Verify your I.D.</p>
                             <p>3. Place your order</p>
@@ -118,9 +118,10 @@ function Delivery() {
                             </div>
                             <p>4. Pay with cash only</p>
                             <p>5. Enjoy!</p>
-                    </div> */}
-                </div> 
+                    </div>
+                </div>  */}
                 {/* <DeliveryCarousel />        */}
+                <DeliveryFaqs />
             </div>
         </div>
     )
