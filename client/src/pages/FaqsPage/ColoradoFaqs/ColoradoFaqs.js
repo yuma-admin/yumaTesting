@@ -32,7 +32,7 @@ const ColoradoFaqs = () => {
         }
 
     return (
-      <div className='container'>
+      <div className='faqsContainer'>
         <h1 className="faqsTitle">FAQs</h1>
         <div className='faqButtons'>
             <button onClick={coFaqs}>Colorado FAQS</button><button onClick={miFaqs}>Michigan FAQS</button>

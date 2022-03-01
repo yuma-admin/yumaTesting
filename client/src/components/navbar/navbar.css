@@ -131,6 +131,11 @@
     color: #f2e6d5;
     padding: 10px;
   }
+  
+  .navMenu a:hover {
+    color: #d9ab73;
+  }
+
   #toggle:checked + .navMenu {
     display: block;
   }

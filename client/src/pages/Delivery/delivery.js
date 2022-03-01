@@ -1,13 +1,33 @@
 import React, { useEffect, useState} from 'react';
-import DeliverySearch from "./Search/deliverySearch";
+import { Helmet } from 'react-helmet';
 import DeliveryMap from "./Map/deliverymap";
-import deliveryjson from './Map/deliveryjson';
 import DeliveryFaqs from './DeliveryFaqs/deliveryfaqs';
-import DeliveryCarousel from './DeliveryCarousel/deliveryCarousel';
 import GeolocateButton from './Geolocate Modal/geolocateButton';
+import DeliveryMobilemap from './Map/deliveryMobilemap';
 import './delivery.css';
 
 function Delivery() {
+
+    //Jane's Tracking Script
+    const janescript = document.createElement("script");
+    janescript.async = true;
+    janescript.src =     
+    `document.addEventListener("click", function(e) {
+          var linkNode = e.srcElement.href ? e.srcElement : e.srcElement.parentNode;
+      if(linkNode.localName !== "a" || linkNode.href.endsWith("#")) return;
+      
+      e.preventDefault();
+      var currentQuery = location.search.substr(1);
+      var url = new URL(linkNode.href);
+      url.search += (url.search.indexOf('?') > -1 ? '&' : '?') + currentQuery;
+      var dst = e.target;
+      if (dst.target) {
+    window.open(url.toString(), dst);
+      } else {
+    location.assign(url.toString());
+      }
+    })`;
+    document.head.appendChild(janescript);
 
     // Id state 
     const [id, setId] = useState({
@@ -43,6 +63,11 @@ function Delivery() {
 
     return (
         <div className='container-fluid'>
+        <Helmet>
+            <title>Yuma Way | Order Delivery Now</title>
+            <meta name='description' content='Yuma Way now offering delivery in select areas! Click to see if we are delivering in your area!'/> 
+            <meta name='keywords' content='Denver, marijuana, delivery, denver cannabis delivery, marijuana delivery near me, THC, flower, concentrates, edibles, cartridges'/>
+        </Helmet>
         <div className='deliveryDesktop'>
             <div className='deliveryHeader'>
                         <h2>
@@ -73,7 +98,6 @@ function Delivery() {
                             <p>5. Enjoy!</p>
                         </div> */}
                         <GeolocateButton />
-                        {/* <DeliverySearch callBack = {setStoreDistance}></DeliverySearch> */}
                     </div>
                     <div className='stickyMap deliveryDesktopMap'> 
                             <DeliveryMap center={mapParams.center} zoom={mapParams.zoom} windowSize={'80vh'}></DeliveryMap> 
@@ -95,13 +119,13 @@ function Delivery() {
                     <p>
                         8am - 9pm
                     </p>
-                </div>
+                    {/* <p>
+                        * Residential Address Delivery Only
+                    </p> */}
                 <GeolocateButton />
-                {/* <div className='deliveryMobileSearch'>
-                    <DeliverySearch callBack = {setStoreDistance}></DeliverySearch>
-                </div> */}
+                </div>
                 <div className='stickyMap deliverymobileMap'> 
-                    <DeliveryMap center={mapParams.center} zoom={mapParams.zoom -2} windowSize={'60vh'}></DeliveryMap>
+                    <DeliveryMobilemap center={mapParams.center} zoom={mapParams.zoom -2} windowSize={'60vh'}></DeliveryMobilemap>
                 </div> 
                 {/* <div className='deliveryMobileContainer'>
                     <h2 className='deliveryMobileHeader'>

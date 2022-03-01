@@ -92,6 +92,7 @@
   
   .deliveryMobileMap {
     display: none;
+    
   }
   .mobileSearch {
     color: #d9ab73;
@@ -153,7 +154,7 @@
         text-align: center;
         align-items: center;
         top: 12%;
-        left: 50%;
+        position: relative;
         z-index: 1;
     }
 
@@ -340,19 +341,19 @@
     }
 
     .geobuttonContainer button {
-        position: fixed;
+        position: absolute;
         padding: 15px 35px;
         font-size: 1.5rem;
         font-weight: bolder;
         transition: all 1s;
         border:0.16em solid #623703;
-        margin: 0, .3em, .3em, 0;
         text-decoration: none;
         text-transform: uppercase;
         font-family: 'Roboto', sans-serif;
         font-size: 20px;
         font-weight: 400;
         text-align: center;
+        width: 50vw;
         background-color: white;
         color: rgb(7, 6, 6);
         cursor: pointer;

@@ -12,7 +12,7 @@ const ColoradoLaw = ({ question, answerP1, answerP2, answerP3, answerP4 }) => {
       {isActive && <div className="accordion-content">
       <p>{answerP1}</p>
       <p>{answerP2}</p>
-      <p>{answerP3} </p>
+      <p>{answerP3}</p>
       <p>{answerP4}</p>
       </div>}
     </div>

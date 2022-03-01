@@ -49,6 +49,10 @@
      text-decoration: none;
  }
 
+ .toggleBtn {
+     color: white;
+ }
+
  @media screen and (max-width: 775px) {
     .footerTM {
         font-size: 10px;

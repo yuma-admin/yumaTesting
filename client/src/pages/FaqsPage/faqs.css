@@ -1,3 +1,22 @@
+.faqsContainer {
+  position: relative;
+  padding: 0 !important;
+  display: flex
+}
+
+#stateLaws {
+  display: none;
+}
+#consumption {
+  display: none;
+}
+#cannabis {
+  display: none;
+}
+#ordering {
+  display: none;
+}
+
 .faqsTitle {
     text-align: center;
     margin: 2rem 0 4rem 0;
@@ -8,8 +27,8 @@
   /* display: flex; */
   align-items: center;
   text-align: center;
-  /* padding: 25px; */
-  /* width: 50%; */
+  padding: 25px;
+  width: 50%;
   box-shadow: rgba(0,0,0,.1) 4px, 4px;
 }
 
