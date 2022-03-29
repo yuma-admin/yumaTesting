@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { ColoradoShopOrderData } from './ColoradoShopOrderData';
 
 const ColoradoShopOrder = ({ question, answerP1, answerP2, answerP3, answerP4, answerP5 }) => {
   const [isActive, setIsActive] = useState(false);
@@ -20,4 +21,14 @@ const ColoradoShopOrder = ({ question, answerP1, answerP2, answerP3, answerP4, a
   );
 };
 
-export default ColoradoShopOrder;
+const CoShopOrder = () => {
+  return (
+    <div className="accordion">
+    { ColoradoShopOrderData.map(({ question, answerP1, answerP2, answerP3 }) => (
+      <ColoradoShopOrder question={question} answerP1={answerP1} answerP2={answerP2} answerP3={answerP3} />
+    ))}
+  </div>
+  )
+}
+
+export default CoShopOrder;

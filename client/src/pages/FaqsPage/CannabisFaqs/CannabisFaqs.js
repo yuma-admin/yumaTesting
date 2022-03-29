@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import { CannabisData } from './CannabisData';
 
-const CannabisFaqs = ({ question, answerP1, answerP2, answerP3, answerP4, answerP5 }) => {
+const CannabisFaqAccordion= ({ question, answerP1, answerP2, answerP3, answerP4, answerP5 }) => {
     const [isActive, setIsActive] = useState(false);
   
     return (
@@ -19,6 +20,15 @@ const CannabisFaqs = ({ question, answerP1, answerP2, answerP3, answerP4, answer
       </div>
     );
   };
-  
+
+const CannabisFaqs = () => {
+  return (
+    <div className='accordion'>
+    { CannabisData.map(({ question, answerP1, answerP2, answerP3, answerP4, answerP5}) => (
+      <CannabisFaqAccordion question={question} answerP1={answerP1} answerP2={answerP2} answerP3={answerP3} answerP4={answerP4} answerP5={answerP5} />
+    ))}
+</div>
+  )
+}  
   export default CannabisFaqs;
 

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {MichiganLawData} from './MichiganLawData';
 
 const MichiganLaw = ({ question, answerP1, answerP2, answerP3, answerP4 }) => {
   const [isActive, setIsActive] = useState(false);
@@ -19,4 +20,14 @@ const MichiganLaw = ({ question, answerP1, answerP2, answerP3, answerP4 }) => {
   );
 };
 
-export default MichiganLaw;
+const MiLawFaqs = () => {
+  return (
+    <div className='accordion'>
+    { MichiganLawData.map(({ question, answerP1, answerP2, answerP3, answerP4}) => (
+      <MichiganLaw question={question} answerP1={answerP1} answerP2={answerP2} answerP3={answerP3} answerP4={answerP4}/>
+    ))}
+    </div>
+  )
+}
+
+export default MiLawFaqs;

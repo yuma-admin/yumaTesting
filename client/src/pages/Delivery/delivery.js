@@ -1,5 +1,6 @@
 import React, { useEffect, useState} from 'react';
 import { Helmet } from 'react-helmet';
+import { useHistory } from 'react-router';
 import DeliveryMap from "./Map/deliverymap";
 import DeliveryFaqs from './DeliveryFaqs/deliveryfaqs';
 import GeolocateButton from './Geolocate Modal/geolocateButton';
@@ -45,6 +46,8 @@ function Delivery() {
         center:{lat: 39.8283, lng: -98.5795}
     })
 
+
+
     // This triggers whenever the id or storeDistance state changes
     // This will then update the map zoom and centering 
     useEffect(() => {
@@ -60,6 +63,9 @@ function Delivery() {
         }
         
     },[id, storeDistance] )
+
+    const history = useHistory();
+    console.log(history);
 
     return (
         <div className='container-fluid'>

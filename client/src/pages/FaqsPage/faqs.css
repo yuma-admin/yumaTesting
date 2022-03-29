@@ -17,11 +17,38 @@
   display: none;
 }
 
-.faqsTitle {
-    text-align: center;
-    margin: 2rem 0 4rem 0;
-    color: #d9ab73;
-  }
+.faqTitle {
+  font-size: 45px;
+  color: #d9ab73;
+  text-align: center;
+  padding-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+
+.faqHeaders {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-evenly;
+  padding: 20px 20px 20px 20px;
+  outline: none;
+  align-items: center;
+}
+
+.faqHeaders a {
+  color: #d9ab73;
+  font-size: 30px;
+  font-family: 'Crimson Pro', sans-serif;
+}
+
+.faqHeaders a:hover {
+  cursor: pointer;
+  text-decoration: underline whitesmoke;
+}
+
+
 
 .faqButtons {
   /* display: flex; */
@@ -92,31 +119,29 @@ button:focus:not(:hover) {
   .accordion {
     max-width: 600px;
     margin: 2rem auto;
-    background-color: #d9ab73;
+    /* background-color: #d9ab73; */
     border-radius: 10px;
     padding: 5px;
   }
 
-  .accordion-header {
+  /* .accordion-header {
     color: #d9ab73;
     justify-content: center;
     text-align: center;
     border-bottom: 1px solid #926c3e;
     padding-bottom: 15px;
-  }
+  } */
   
   .accordion-title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     cursor: pointer;
-    background-color: #d9ab73;
     font-family: "Crimson Text Pro", serif;
     font-weight: bolder;
-  }
-  
-  .accordion-title:hover {
-    background-color: #926c3e;
+    color: #d9ab73;
+    border-top: 1px solid #e2b987;
+    border-bottom: 1px solid #e2b987;
   }
   
   .accordion-title,
@@ -125,14 +150,45 @@ button:focus:not(:hover) {
   }
   
   .accordion-content {
-    background-color: #e2b987;
+    color: #d9ab73;
   }
   
-  @media screen and (max-width: 700px) {
-    body {
-      font-size: 18px;
+  @media screen and (max-width: 480px) {
+    
+    .faqTitle {
+      font-size: 35px;
+      color: #d9ab73;
+      text-align: center;
+      padding-top: 10px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
     }
-  
+
+    .faqHeaders {
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      justify-content: space-between;
+      padding: 10px 10px 10px 10px;
+      outline: none;
+      align-items: center;
+    }
+    
+    .faqHeaders a {
+      color: #d9ab73;
+      font-size: 20px;
+      font-family: 'Crimson Pro', sans-serif;
+    }
+    
+    .faqHeaders a:hover {
+      cursor: pointer;
+      text-decoration: underline whitesmoke;
+    }
+
+  }
+
+  @media screen and (max-width: 700px) {
+
     .accordion {
       width: 90%;
     }

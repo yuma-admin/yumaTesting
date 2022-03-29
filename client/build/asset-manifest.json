@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.9b0fcb2d.chunk.css",
-    "main.js": "/static/js/main.06fd8432.chunk.js",
-    "main.js.map": "/static/js/main.06fd8432.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.2d3023b7.js",
-    "runtime-main.js.map": "/static/js/runtime-main.2d3023b7.js.map",
-    "static/js/2.abb920db.chunk.js": "/static/js/2.abb920db.chunk.js",
-    "static/js/2.abb920db.chunk.js.map": "/static/js/2.abb920db.chunk.js.map",
-    "static/js/3.f7590893.chunk.js": "/static/js/3.f7590893.chunk.js",
-    "static/js/3.f7590893.chunk.js.map": "/static/js/3.f7590893.chunk.js.map",
+    "main.css": "/static/css/main.80a2c99a.chunk.css",
+    "main.js": "/static/js/main.7c7332c3.chunk.js",
+    "main.js.map": "/static/js/main.7c7332c3.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.bfda65bc.js",
+    "runtime-main.js.map": "/static/js/runtime-main.bfda65bc.js.map",
+    "static/js/2.1b6cc815.chunk.js": "/static/js/2.1b6cc815.chunk.js",
+    "static/js/2.1b6cc815.chunk.js.map": "/static/js/2.1b6cc815.chunk.js.map",
+    "static/js/3.117c47b5.chunk.js": "/static/js/3.117c47b5.chunk.js",
+    "static/js/3.117c47b5.chunk.js.map": "/static/js/3.117c47b5.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.9b0fcb2d.chunk.css.map": "/static/css/main.9b0fcb2d.chunk.css.map",
-    "static/js/2.abb920db.chunk.js.LICENSE.txt": "/static/js/2.abb920db.chunk.js.LICENSE.txt",
-    "static/media/homeStyle.css": "/static/media/phoneApp-Background2.9c22cf09.png"
+    "static/css/main.80a2c99a.chunk.css.map": "/static/css/main.80a2c99a.chunk.css.map",
+    "static/js/2.1b6cc815.chunk.js.LICENSE.txt": "/static/js/2.1b6cc815.chunk.js.LICENSE.txt",
+    "static/media/coffeeJointLogo.0650f5a9.png": "/static/media/coffeeJointLogo.0650f5a9.png",
+    "static/media/delivery.css": "/static/media/unionstation.a3eec8e8.jpg",
+    "static/media/homeStyle.css": "/static/media/phoneApp-Background2.9c22cf09.png",
+    "static/media/yuma-svg-logo.23e05cf5.svg": "/static/media/yuma-svg-logo.23e05cf5.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.2d3023b7.js",
-    "static/js/2.abb920db.chunk.js",
-    "static/css/main.9b0fcb2d.chunk.css",
-    "static/js/main.06fd8432.chunk.js"
+    "static/js/runtime-main.bfda65bc.js",
+    "static/js/2.1b6cc815.chunk.js",
+    "static/css/main.80a2c99a.chunk.css",
+    "static/js/main.7c7332c3.chunk.js"
   ]
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import {useHistory} from 'react-router-dom'
+
 
 // Script From I Heart Jane to Geolocate User.
 
@@ -11,17 +11,13 @@ function GeolocateScript() {
 
     document.body.appendChild(script);
 
-
-
-
     return (
         <>
             <div className='container-fluid'>
-            {/* <div onClick={() => setShowModal(false)} className="deliveryBackButtonBar">Back</div> */}
             <div id="jane-frame-script"></div>
             </div>
         </>
     )
 }
 
-export default GeolocateScript
+export default GeolocateScript;

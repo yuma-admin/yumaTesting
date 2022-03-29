@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import {MichiganShopOrderData} from './MichiganShopOrderData'
 
-const MichiganShopOrder = ({ question, answerP1, answerP2, answerP3 }) => {
+const MichiganShopOrderAccordion = ({ question, answerP1, answerP2, answerP3 }) => {
   const [isActive, setIsActive] = useState(false);
 
   return (
@@ -17,5 +18,15 @@ const MichiganShopOrder = ({ question, answerP1, answerP2, answerP3 }) => {
     </div>
   );
 };
+
+const MichiganShopOrder = () => {
+  return (
+    <div className="accordion">
+    { MichiganShopOrderData.map(({ question, answerP1, answerP2, answerP3 }) => (
+      <MichiganShopOrderAccordion question={question} answerP1={answerP1} answerP2={answerP2} answerP3={answerP3} />
+    ))}
+  </div>
+  )
+}
 
 export default MichiganShopOrder;

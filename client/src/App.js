@@ -14,8 +14,7 @@ import DealsPage from './pages/DealsPage/DealsPage'
 import About from './pages/About/About'
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy'
 import Delivery from './pages/Delivery/delivery';
-import MichiganFaqs from './pages/FaqsPage/MichiganFaqs/MichiganFaqs';
-import ColoradoFaqs from "./pages/FaqsPage/ColoradoFaqs/ColoradoFaqs";
+
 
 // STORE FINDER PAGE AND COMPONENTS
 import StoreFinder from './pages/storeFinder/StoreFinder'
@@ -23,24 +22,17 @@ import Menu from './pages/storeFinder/menu/menu'
 
 // NAV AND FOOTER COMPONENTS
 import NavBar from './components/navbar/navBar'
-import Footer from './components/footer/footer'
+// import Footer from './components/footer/footer'
+import Footer from "./components/footer/newfooter";
 
 //AGE GATE
 import AgeGateModal from './components/AgeGateModal/AgeGateModal'
 import ageGateLogic from './components/AgeGateModal/ageGateLogic'
 import { createPortal } from "react-dom"
 
-//Testing IheartJane Geolocate API
-import DeepLinkTest from "./pages/DeepLinkingTest/deepLinkGeolocate";
-import DeepLink from "./pages/DeepLinkingTest/deeplinking";
-
-//Testing Carousel Menu
-import DeliveryCarousel from "./pages/Delivery/DeliveryCarousel/deliveryCarousel";
-
-//Testing Delivery Menu Page
-import DeliveryMenu from "./pages/Delivery/DeliveryMenu/deliveryMenu";
-import MenuTest from "./pages/Delivery/DeliveryMenu/menuTest";
-import GeolocateModal from "./pages/Delivery/Geolocate Modal/geolocateModal";
+// Yuma Way FAQS Pages
+import COFAQS from "./pages/FaqsPage/ColoradoFaqs/COFAQS";
+import MIFAQS from "./pages/FaqsPage/MichiganFaqs/MIFAQS";
 
 function App() {
 
@@ -101,16 +93,6 @@ function App() {
             <Home />
           </Route>
 
-          <Route exact path="/edibles" >
-            <DeepLinkTest />
-          </Route>
-
-
-          <Route exact path="/concentrates">
-            <DeepLink/>
-          </Route> 
-
-
 
           {/* DEALS PAGE ROUTES */}
           <Route path={["/colorado-deals", "/michigan-deals"]}>
@@ -127,31 +109,21 @@ function App() {
             <PrivacyPolicy/>
           </Route>
 
-          {/* FAQS */}
+          {/* Colorado FAQS */}
           <Route exact path="/colorado-faqs">
-            <ColoradoFaqs/>
+            <COFAQS/>
           </Route>
-
+          {/* Michigan FAQS */}
           <Route exact path="/michigan-faqs">
-            <MichiganFaqs/>
+            <MIFAQS/>
           </Route>
 
+          {/* DELIVERY */}
           <Route exact path="/delivery">
             <Delivery/>
           </Route>
 
 
-          <Route exact path= '/delivery/menu'>
-            <DeliveryMenu />
-          </Route>
-
-          <Route exact path= '/menutest'>
-            <GeolocateModal />
-          </Route>
-
-          {/* <Route exact path="/delivery-carousel">
-            <DeliveryCarousel/>
-          </Route> */}
           {/* STORE LOCATOR ROUTES */}
           {/* KEEP THIS ROUTER AT THE BOTTOM OR ANY PAGE BELOW WILL REDIRECT TO THIS */}
           <Router basename="/locations">
@@ -165,9 +137,8 @@ function App() {
               <StoreFinder callBack={setStoreSelected}></StoreFinder>
             </Route>
           </Router>
- 
         </Switch>
-        <Footer></Footer>
+        <Footer/>
       </div>
 
       {/* HIDDEN MODAL */}

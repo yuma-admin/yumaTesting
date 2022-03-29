@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import { ColoradoLawData } from './ColoradoLawData';
+
 const ColoradoLaw = ({ question, answerP1, answerP2, answerP3, answerP4 }) => {
   const [isActive, setIsActive] = useState(false);
 
@@ -19,4 +21,15 @@ const ColoradoLaw = ({ question, answerP1, answerP2, answerP3, answerP4 }) => {
   );
 };
 
-export default ColoradoLaw;
+const CoLawFaqs = () => {
+
+  return (
+    <div className='accordion'>
+    { ColoradoLawData.map(({ question, answerP1, answerP2, answerP3, answerP4}) => (
+      <ColoradoLaw question={question} answerP1={answerP1} answerP2={answerP2} answerP3={answerP3} answerP4={answerP4}/>
+    ))}
+</div>
+  )
+}
+
+export default CoLawFaqs;

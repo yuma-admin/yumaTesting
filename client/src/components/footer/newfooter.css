@@ -1,0 +1,84 @@
+.footerContainer {
+    background-color: black;
+    width: 100vw;
+    height: auto;
+    padding: 15px;
+    z-index: 100;
+}
+
+.footerGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.socialSection {
+    display: grid;
+}
+
+.yumaBrands {
+    /* display: block; */
+    padding: 15px;
+}
+
+.yumaLogos {
+    font-size: 20px;
+    padding: 25px;
+    justify-content: space-between;
+    max-width: 25px;
+    max-height: 25px;
+    color: black;
+}
+
+.socialHeader {
+    font-size: 25px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #d9ab73;
+    font-weight: 800;
+}
+
+.socialLinks {
+    text-align: center;
+    font-size: 25px;
+}
+
+.socialLinks a {
+    color: #d9ab73;
+    padding: 20px;
+}
+
+
+
+.yumaLinks {
+    display: flex;
+    flex-direction: column;
+    color: #d9ab73;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.yumaLinks a {
+    color: #d9ab73;
+    /* text-decoration: none; */
+}
+
+.footerNavLink {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footerNavLink:hover {
+    cursor: pointer;
+}
+
+.footerTrademark {
+    text-align: center;
+    padding: 10px;
+}
+
+.footerTrademark a {
+    color: #d9ab73;
+}
+

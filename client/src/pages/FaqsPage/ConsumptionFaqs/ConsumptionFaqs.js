@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import { ConsumptionData } from './ConsumptionData';
 
-const ConsumptionFaqs = ({ question, answerP1, answerP2, answerP3, answerP4 }) => {
+const ConsumptionAccordion = ({ question, answerP1, answerP2, answerP3, answerP4 }) => {
     const [isActive, setIsActive] = useState(false);
   
     return (
@@ -18,5 +19,15 @@ const ConsumptionFaqs = ({ question, answerP1, answerP2, answerP3, answerP4 }) =
       </div>
     );
   };
+
+const ConsumptionFaqs = () => {
+  return (
+    <div className='accordion'>
+    { ConsumptionData.map(({ question, answerP1, answerP2, answerP3, answerP4, answerP5}) => (
+      <ConsumptionAccordion question={question} answerP1={answerP1} answerP2={answerP2} answerP3={answerP3} answerP4={answerP4} answerP5={answerP5} />
+    ))}
+</div>
+  )
+}   
   
   export default ConsumptionFaqs;

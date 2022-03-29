@@ -40,7 +40,7 @@ div.dfaqs-container .dfaqs-section {
     justify-content: center;
     align-items: center;
     min-height: 40vh;
-    background-color: white;
+    /* background-color: white; */
 }
 
 .dfaqs-header {

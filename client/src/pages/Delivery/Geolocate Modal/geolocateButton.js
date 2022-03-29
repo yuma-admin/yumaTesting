@@ -8,6 +8,17 @@ function GeolocateButton() {
 
     const openModal = () => {
         setShowModal(true);
+        if(true) {
+            //push to history when opened
+            window.history.pushState(null, '', window.location.href)
+
+            //closes modal on browser back button
+            window.onpopstate = () => {
+                window.onpopstate = () => {}
+                window.history.back()
+                setShowModal(false)
+            }
+        }
     };
 
     return (
