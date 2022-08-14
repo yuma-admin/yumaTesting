@@ -44,9 +44,10 @@ div.dfaqs-container .dfaqs-section {
 }
 
 .dfaqs-header {
-    color:#9c6d34;
+    margin-top: 4rem;
+    color:#d9ab73;
     text-align: center;   
-    font-size: 30px;
+    font-size: 4rem;
     padding: 50px;
     font-family: "Crimson Pro", sans-serif;
     font-weight: 700;

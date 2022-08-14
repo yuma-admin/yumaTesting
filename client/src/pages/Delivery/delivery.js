@@ -87,11 +87,11 @@ function Delivery() {
                         </h2>
                         <h3 className='floatSub'>
                             8am - 9pm
+                        <p>* Delivery To Residential Addresses Only</p>
                         </h3>
                         <div className='floatList'>
-                        <p>* Delivery To Residential Addresses Only</p>
                         </div>
-                        {/* <div className='floatList'>
+                        <div className='floatList'>
                             <p>1. Create an account</p>
                             <p>2. Verify your I.D.</p>
                             <p>3. Place your order</p>
@@ -102,7 +102,7 @@ function Delivery() {
                             </div>
                             <p>4. Pay with cash only</p>
                             <p>5. Enjoy!</p>
-                        </div> */}
+                        </div>
                         <GeolocateButton />
                     </div>
                     <div className='stickyMap deliveryDesktopMap'> 
